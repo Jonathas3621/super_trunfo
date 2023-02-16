@@ -1,0 +1,157 @@
+{
+    "Raças de D&D":
+    {
+        "1A":{"nome":"Goblins"},
+        "2A":{"nome":"Orcs"},
+        "3A":{"nome":"Corvo"},
+        "4A":{"nome":"Urso marrom"},
+        "5A":{"nome":"Diabrete"},
+        "6A":{"nome":"Esqueleto"},
+        "7A":{"nome":"Lobo Atroz"},
+        "8A":{"nome":"Mastim"},
+
+        "1B":{"nome":"Quasit"},
+        "2B":{"nome":"Pseudodragão"},
+        "3B":{"nome":"Sprite"},
+        "4B":{"nome":"Zumbi"},
+        "5B":{"nome":"Tubarão dos Arrecifes"},
+        "6B":{"nome":"Serpente venenosa"},
+        "7B":{"nome":"Tigre"},
+        "8B":{"nome":"Pantera"},
+
+        "1C":{"nome":"Morcego"},
+        "2C":{"nome":"Leão"},
+        "3C":{"nome":"Javali"},
+        "4C":{"nome":"Crocodilo"},
+        "5C":{"nome":"Cobre constritora"},
+        "6C":{"nome":"Aranha gigante"},
+        "7C":{"nome":"Águia gigante"},
+        "8C":{"nome":"Anão"},
+
+        "1D":{"nome":"Elfo"},
+        "2D":{"nome":"Halfling"},
+        "3D":{"nome":"Humano"},
+        "4D":{"nome":"Draconato"},
+        "5D":{"nome":"Gnomo"},
+        "6D":{"nome":"Meio-Elfo"},
+        "7D":{"nome":"Meio-Orc"},
+        "8D":{"nome":"Tiefling"}
+    },
+
+    "Predadores":
+    {
+        "1A":{"nome":"Guepardo"},
+        "2A":{"nome":"Onça"},
+        "3A":{"nome":"Leão"},
+        "4A":{"nome":"Leopardo"},
+        "5A":{"nome":"Tigre"},
+        "6A":{"nome":"Pantera"},
+        "7A":{"nome":"Hiena"},
+        "8A":{"nome":"Lobo cinzento"},
+
+        "1B":{"nome":"Falcão"},
+        "2B":{"nome":"Águia"},
+        "3B":{"nome":"Lince"},
+        "4B":{"nome":"Tarântula"},
+        "5B":{"nome":"Cascavél"},
+        "6B":{"nome":"Naja"},
+        "7B":{"nome":"Coruja"},
+        "8B":{"nome":"Hárpia"},
+
+        "1C":{"nome":"Tubarão Tigre"},
+        "2C":{"nome":"Orca"},
+        "3C":{"nome":"Piranha"},
+        "4C":{"nome":"Raposa"},
+        "5C":{"nome":"Humano"},
+        "6C":{"nome":"Viúva negra"},
+        "7C":{"nome":"Louva-deus"},
+        "8C":{"nome":"Escorpião"},
+
+        "1D":{"nome":"Lontra"},
+        "2D":{"nome":"Crocodilo"},
+        "3D":{"nome":"Jacaré"},
+        "4D":{"nome":"Sucuri"},
+        "5D":{"nome":"Urso cinzento"},
+        "6D":{"nome":"Urso polar"},
+        "7D":{"nome":"Dragão de Komodo"},
+        "8D":{"nome":"Lobo guará"}
+    },
+
+    "Dinossauros":
+    {
+        "1A":{"nome":"Herrerassauro"},
+        "2A":{"nome":"Procompsognato"},
+        "3A":{"nome":"Patagossauro"},
+        "4A":{"nome":"Ceratossauro"},
+        "5A":{"nome":"Pterodáctilo"},
+        "6A":{"nome":"Velociraptor"},
+        "7A":{"nome":"Triceratopo"},
+        "8A":{"nome":"Baptornis"},
+
+        "1B":{"nome":"Plateossauro"},
+        "2B":{"nome":"Peteinossauro"},
+        "3B":{"nome":"Estegossauro"},
+        "4B":{"nome":"Alossauro"},
+        "5B":{"nome":"Ultrassauro"},
+        "6B":{"nome":"Tiranossauro Rex"},
+        "7B":{"nome":"Carnotauro"},
+        "8B":{"nome":"Iberomesornis"},
+
+        "1C":{"nome":"Coelophisis"},
+        "2C":{"nome":"Melanorossauro"},
+        "3C":{"nome":"Brachiossauro"},
+        "4C":{"nome":"Dilofosauro"},
+        "5C":{"nome":"Othnielia"},
+        "6C":{"nome":"Carcharodontossaruo"},
+        "7C":{"nome":"Barionix"},
+        "8C":{"nome":"Hylaeossauro"},
+
+        "1D":{"nome":"Eoraptor"},
+        "2D":{"nome":"Nothossauro"},
+        "3D":{"nome":"Diplodoco"},
+        "4D":{"nome":"Compsognato"},
+        "5D":{"nome":"Oftalmossauro"},
+        "6D":{"nome":"Psitacossauro"},
+        "7D":{"nome":"Oviraptor"},
+        "8D":{"nome":"Globidens"}
+    },
+
+    "Criaturas Harry Potter":
+    {
+        "1A":{"nome":"Acromântula"},
+        "2A":{"nome":"Basilisco"},
+        "3A":{"nome":"Bicho-papão"},
+        "4A":{"nome":"Centauro"},
+        "5A":{"nome":"Dementador"},
+        "6A":{"nome":"Dragão"},
+        "7A":{"nome":"Duende"},
+        "8A":{"nome":"Elfo-doméstico"},
+
+        "1B":{"nome":"Fantasma"},
+        "2B":{"nome":"Fênix"},
+        "3B":{"nome":"Hipogrifo"},
+        "4B":{"nome":"Lobisomem"},
+        "5B":{"nome":"Pelúcio"},
+        "6B":{"nome":"Seminviso/Deminguise"},
+        "7B":{"nome":"Sereiano"},
+        "8B":{"nome":"Tronquilho"},
+
+        "1C":{"nome":"Testrálio"},
+        "2C":{"nome":"Pássaro-trovão"},
+        "3C":{"nome":"Occami"},
+        "4C":{"nome":"Erumpente"},
+        "5C":{"nome":"Rapinomônio"},
+        "6C":{"nome":"Nundu"},
+        "7C":{"nome":"Arpéu"},
+        "8C":{"nome":"Gira-gira"},
+
+        "1D":{"nome":"Bezerro apaixonado"},
+        "2D":{"nome":"Agoureiro"},
+        "3D":{"nome":"Cavalo do lago"},
+        "4D":{"nome":"Kappa"},
+        "5D":{"nome":"Chupa-cabra"},
+        "6D":{"nome":"Melusina"},
+        "7D":{"nome":"Metagot"},
+        "8D":{"nome":"Abarimon"}
+    }
+}
