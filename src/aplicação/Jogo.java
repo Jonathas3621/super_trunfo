@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import exceções.ThemeNotAvailableException;
 
-public class Jogo {
+public class Jogo implements Runnable{
 	
     private final Baralho baralho;
     private JogadorAbstrato jogadorDaVez;
@@ -37,13 +37,15 @@ public class Jogo {
                 System.out.printf("Vez de %s%n%n", getJogadorDaVez().getNome());
 
                 int atributoEscolhido = jogadorDaVez.jogarTurno();
-
+                System.out.println(atributoEscolhido);
+                
                 getJogadores().forEach(jogador -> {
                     cartasEmJogo.add(jogador.getMonte().pegarDoTopo());
                 });
 
                 System.out.printf("Cartas em jogo %s%n%n", cartasEmJogo);
-
+                System.out.printf("Jogadores: %s", jogadores);
+                
                 indexJogadorDaVez = cartaVencedora(cartasEmJogo, atributoEscolhido);
 
                 for(Carta carta: cartasEmJogo)
@@ -69,20 +71,6 @@ public class Jogo {
     public void adicionarJogador(JogadorAbstrato jogador) {
             jogadores.add(jogador);
     }
-
-    public void removerJogador(JogadorAbstrato jogador) {
-            jogadores.remove(jogador);
-    }
-    
-    /*
-    private JogadorAbstrato proximoJogador() {
-            ArrayList<JogadorAbstrato> jogad = getJogadores();
-
-            int current = jogad.indexOf(getJogadorDaVez());
-
-            if((current + 1) == jogad.size()) return jogad.get(0);
-            else return jogad.get(current+1);
-    }*/
 
     private int cartaVencedora(ArrayList<Carta> listaDeCartas, int atributo) {
         
@@ -122,7 +110,7 @@ public class Jogo {
         List<JogadorAbstrato> jogad = getJogadores();
 
         for(JogadorAbstrato jogador: jogad)
-            if(jogador.getMonte().isEmpty()) removerJogador(jogador);
+            if(jogador.getMonte().isEmpty()) jogadores.remove(jogador);
     }
 
     public JogadorAbstrato getJogadorDaVez(){
@@ -135,5 +123,10 @@ public class Jogo {
 
     private ArrayList<JogadorAbstrato> getJogadores(){
         return jogadores;
+    }
+
+    @Override
+    public void run() {
+        partidaDeSuperTrunfo();
     }
 }

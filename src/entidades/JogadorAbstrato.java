@@ -1,5 +1,3 @@
-//Jonathas dos Santos, 202201644
-
 package entidades;
 
 import java.beans.PropertyChangeEvent;
