@@ -1,5 +1,3 @@
-//Jonathas dos Santos, 202201644
-
 package entidades;
 
 import java.util.Collections;
@@ -8,22 +6,15 @@ import java.util.List;
 
 import arquivosUtil.JsonUtil;
 import org.json.JSONObject;
-import exceções.ThemeNotAvailableException;
-import java.util.Arrays;
 
 public class Baralho extends LinkedList<Carta>{
 
 	private static final long serialVersionUID = 1L;
 	private static String tema;
-        private String[] listaDeTemas = {"Predadores", "Dinossauros", "Raças de D&D", "Criaturas Harry Potter"};
 	
 	public Baralho() {};
 	
-	public Baralho(String tema) throws ThemeNotAvailableException{
-            
-            List<String> lista = Arrays.asList(listaDeTemas);
-            if(!lista.stream().anyMatch(x->x.equals(tema)))
-                throw new ThemeNotAvailableException("Este tema não existe!");
+	public Baralho(String tema){
             
             Baralho.tema = tema;
 	}
@@ -50,8 +41,8 @@ public class Baralho extends LinkedList<Carta>{
 	}
 
 	public void distribuir(List<JogadorAbstrato> jogadores) {
-            while(!this.isEmpty()) {
-            //for(int c=0; c<10;c++){
+            //while(!this.isEmpty()) {
+            for(int i = 0; i < 2; i++){
                 for(JogadorAbstrato jogador: jogadores) {
                     jogador.adicionarCarta(pegarDoTopo());
                 }

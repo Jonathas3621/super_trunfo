@@ -72,6 +72,19 @@ public class Carta {
         private void setAtributos(int index, Atributo atributo) {
 		this.atributos[index] = atributo;
 	}
+        
+        public String[] extrairDadosComoString(){
+            String[] listaDeDados = new String[6];
+
+            listaDeDados[0] = String.format("%s | %s", this.getCodigo(), this.getNome());
+            listaDeDados[5] = "CURIOSO, NÃO?";
+            for(int i=1; i<=4; i++){
+                listaDeDados[i] = this.getAtributos()[i-1].toString();
+                //System.out.println("Teste Extrair Dados" + listaDeDados[i]);
+            }
+            //for(String o: listaDeDados) System.out.print(o + " ");
+            return listaDeDados;
+        }
 	
 	@Override
 	public String toString() {

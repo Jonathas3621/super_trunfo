@@ -1,15 +1,10 @@
 package aplicação;
 
-import java.util.Scanner;
-
 import entidades.Jogador;
 import entidades.JogadorMaquina;
-import exceções.ThemeNotAvailableException;
 import interfaces.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -51,7 +46,6 @@ public class Principal implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        //System.out.println(((JButton) e.getSource()).getText());
         
         if(((JButton) e.getSource()).getText().equals("Jogar")) {
             
@@ -62,11 +56,7 @@ public class Principal implements ActionListener{
                     JOptionPane.INFORMATION_MESSAGE, null,
                     temas, temas[0]); 
             
-            try {
-                setJogo(new Jogo((String) tema));
-            } catch (ThemeNotAvailableException ex) {
-                
-            }
+            setJogo(new Jogo((String) tema));
             
             Jogador jogadorw = new Jogador("Jonathas");
             JogadorMaquina jogadorBot = new JogadorMaquina("Bot");
@@ -80,6 +70,8 @@ public class Principal implements ActionListener{
             setJanelaAtual(janelaDeJogo);
             janelaDeJogo.adicionarEventListener(jogadorw);
             
+            getJogo().adicionarListener(janelaDeJogo);
+            
             System.out.println(janelaDeJogo);
             
             Thread thread = new Thread(getJogo());
@@ -87,25 +79,3 @@ public class Principal implements ActionListener{
         }
     }
 }
-/*
- System.out.println("Selecione um tema:");
-        System.out.println("[Predadores, Dinossauros, Raças de D&D, Criaturas Harry Potter]");
-
-        String tema;
-        Scanner scanner = new Scanner(System.in);
-        
-        Jogo jogo = null;
-        while(jogo == null){
-            tema = scanner.nextLine();
-            try{
-                jogo = new Jogo(tema);
-            }catch(ThemeNotAvailableException tnae){
-                System.out.println(tnae.getMessage());
-            }
-        }
-        
-        jogo.adicionarJogador(new Jogador("Jonathas"));
-        jogo.adicionarJogador(new JogadorMaquina("Bot"));
-
-        jogo.partidaDeSuperTrunfo();
-*/

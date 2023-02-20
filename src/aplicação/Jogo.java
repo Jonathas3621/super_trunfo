@@ -5,23 +5,28 @@ import java.util.ArrayList;
 import entidades.Baralho;
 import entidades.Carta;
 import entidades.JogadorAbstrato;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import static java.lang.Thread.sleep;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
-import exceções.ThemeNotAvailableException;
 
 public class Jogo implements Runnable{
 	
     private final Baralho baralho;
     private JogadorAbstrato jogadorDaVez;
     private ArrayList<JogadorAbstrato> jogadores;
+    private PropertyChangeSupport anunciante;
 
-    public Jogo(String tema) throws ThemeNotAvailableException{
+    public Jogo(String tema){
 
         this.baralho = new Baralho(tema);
         jogadores = new ArrayList<>();
+        anunciante = new PropertyChangeSupport(this);
     }
 
-    public void partidaDeSuperTrunfo() {
+    public synchronized void partidaDeSuperTrunfo() {
 
         baralho.carregar();
         baralho.embaralhar();
@@ -29,32 +34,72 @@ public class Jogo implements Runnable{
         int indexJogadorDaVez = 0;
         
         while(!temVencedor()) {
-
+                
+                anunciante.firePropertyChange("inicioDePartida", 
+                            null, 
+                            null);
+                
                 ArrayList<Carta> cartasEmJogo = new ArrayList<>();
 
                 setJogadorDaVez(getJogadores().get(indexJogadorDaVez));
+                
+                anunciante.firePropertyChange("mensagemJogadorDaVez", 
+                            null, 
+                            getJogadorDaVez().getNome());
 
                 System.out.printf("Vez de %s%n%n", getJogadorDaVez().getNome());
-
+                
+                anunciante.firePropertyChange("status", 
+                            null, 
+                            mostrarStatus());
+                
+                if(getJogadorDaVez() instanceof entidades.Jogador)
+                    anunciante.firePropertyChange("cartaAtual", 
+                            null, 
+                            getJogadorDaVez().getMonte().verDoTopo());
+                
                 int atributoEscolhido = jogadorDaVez.jogarTurno();
                 System.out.println(atributoEscolhido);
+                System.out.println(getJogadorDaVez().getMonte().verDoTopo().getAtributos()[atributoEscolhido].getNome());
+                
+                getJogadores().forEach(jogador -> {
+                    if(jogador instanceof entidades.JogadorMaquina)
+                        anunciante.firePropertyChange("cartaAdver", 
+                                null, 
+                                jogador.getMonte().verDoTopo());
+                });
+                
+                anunciante.firePropertyChange("atributoEscolhido", 
+                            null, 
+                            getJogadorDaVez().getMonte().verDoTopo().getAtributos()[atributoEscolhido].getNome());
                 
                 getJogadores().forEach(jogador -> {
                     cartasEmJogo.add(jogador.getMonte().pegarDoTopo());
                 });
-
+                
                 System.out.printf("Cartas em jogo %s%n%n", cartasEmJogo);
                 System.out.printf("Jogadores: %s", jogadores);
                 
                 indexJogadorDaVez = cartaVencedora(cartasEmJogo, atributoEscolhido);
-
+                
                 for(Carta carta: cartasEmJogo)
                         getJogadores().get(indexJogadorDaVez).adicionarCarta(carta);
-
+                
                 System.out.printf("Jogador %s venceu!%n", getJogadores().get(indexJogadorDaVez).getNome());
-
+                
+                anunciante.firePropertyChange("mensagemVencedor", 
+                            null, 
+                            getJogadores().get(indexJogadorDaVez).getNome());
+                
                 removerPerdedores();
-
+                
+                try {
+                    sleep(2000);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); 
+                    System.err.println("Thread Interrupted");
+                }
+                
                 System.out.println("Status:");
                 mostrarStatus();
                 System.out.printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=%n%n");
@@ -62,10 +107,16 @@ public class Jogo implements Runnable{
         System.out.println("Alguém venveu");
     }
 
-    public void mostrarStatus() {
-
-            for(JogadorAbstrato jogador: jogadores) 
-                    System.out.printf("%s: %d cartas.%n", jogador.getNome(), jogador.getMonte().size());
+    public HashMap<String, Number> mostrarStatus() {
+        
+        HashMap<String,  Number> status = new HashMap<>();
+        
+        for(JogadorAbstrato jogador: getJogadores()) 
+            
+            status.put(jogador.getNome(), 
+                    jogador.getMonte().size());
+        
+        return status;
     }
 
     public void adicionarJogador(JogadorAbstrato jogador) {
@@ -109,8 +160,8 @@ public class Jogo implements Runnable{
 
         List<JogadorAbstrato> jogad = getJogadores();
 
-        for(JogadorAbstrato jogador: jogad)
-            if(jogador.getMonte().isEmpty()) jogadores.remove(jogador);
+        for(int indice=0; indice<jogad.size(); indice++)
+            if(jogad.get(indice).getMonte().isEmpty()) jogadores.remove(jogad.get(indice));
     }
 
     public JogadorAbstrato getJogadorDaVez(){
@@ -124,9 +175,15 @@ public class Jogo implements Runnable{
     private ArrayList<JogadorAbstrato> getJogadores(){
         return jogadores;
     }
-
+    
+    //Método de Multithreading
     @Override
     public void run() {
         partidaDeSuperTrunfo();
+    }
+    
+    //Métodos do padrão observer
+    public void adicionarListener(PropertyChangeListener listener){
+        anunciante.addPropertyChangeListener(listener);
     }
 }
