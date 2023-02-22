@@ -1,83 +1,46 @@
 package entidades;
 
-import org.json.JSONObject;
-
 public class Carta {
 
 	private String nome;
 	private String codigo;
+	private String curiosidade;
         private boolean trunfo;
 	private Atributo[] atributos;
-	
-	public Carta(String nome, String codigo, Atributo[] atributos) {
+        
+	public Carta(String nome, String codigo, String curiosidade, boolean trunfo, Atributo[] atributos) {
 		this.nome = nome;
 		this.codigo = codigo;
+                this.curiosidade = curiosidade;
+                this.trunfo = trunfo;
                 this.atributos = atributos;
-	}
-        
-        public Carta(String codigo, JSONObject atributos, JSONObject unidadesDeMedida){
-            this.atributos = new Atributo[4];
-            carregarCarta(codigo, atributos, unidadesDeMedida);
-        }
-        
-        private void carregarCarta(String codigo, JSONObject dados, JSONObject unidadesDeMedida) {
-            
-            setNome((String) dados.get("nome"));
-            setCodigo(codigo);
-            setTrunfo(dados.getBoolean("trunfo"));
-            
-            Object[] listaDeAtributos = unidadesDeMedida.keySet().toArray();
-            
-            for(int indice = 0; indice < listaDeAtributos.length; indice++){
-                
-                String atributoNome = (String) listaDeAtributos[indice];
-                
-                Atributo atributo;
-                atributo = new Atributo(atributoNome, 
-                        (String) unidadesDeMedida.get(atributoNome),
-                        dados.getDouble(atributoNome));
-                
-                setAtributos(indice, atributo);
-            }
 	}
 
 	public String getNome() {
-		return nome;
+            return nome;
 	}
-        
-        private void setNome(String nome){
-            this.nome = nome;
-        }
         
 	public String getCodigo() {
-		return codigo;
+            return codigo;
 	}
         
-        private void setCodigo(String codigo){
-            this.codigo = codigo;
+        public String getCuriosidade(){
+            return curiosidade;
         }
         
         public boolean ehTrunfo() {
-		return trunfo;
-	}
-        
-        private void setTrunfo(boolean trunfo) {
-		this.trunfo = trunfo;
+            return trunfo;
 	}
 	
 	public Atributo[] getAtributos() {
-		return atributos;
-	}
-        
-        private void setAtributos(int index, Atributo atributo) {
-		this.atributos[index] = atributo;
+            return atributos;
 	}
         
         public String[] extrairDadosComoString(){
             String[] listaDeDados = new String[7];
 
-            listaDeDados[0] = String.format("%s | %s", this.getCodigo(), this.getNome());
-            listaDeDados[6] = "CURIOSO, NÃO?";
+            listaDeDados[0] = String.format("%s | %s", getCodigo(), getNome());
+            listaDeDados[6] = curiosidade;
             listaDeDados[1] = ehTrunfo() ? "Super Trunfo": "";
             for(int i=2; i<=5; i++){
                 listaDeDados[i] = this.getAtributos()[i-2].toString();

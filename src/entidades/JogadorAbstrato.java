@@ -31,8 +31,4 @@ public abstract class JogadorAbstrato implements PropertyChangeListener{
 	public Baralho getMonte() {
 		return monte;
 	}
-	
-	public void adicionarCarta(Carta carta) {
-		if (carta != null) this.monte.add(carta);
-	}
 }

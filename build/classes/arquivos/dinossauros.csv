@@ -1,0 +1,33 @@
+Nome,Codigo,Altura,UnidadeDeMedida,Peso,UnidadeDeMedida,Comprimento,UnidadeDeMedida,Viveu há,UnidadeDeMedida,Trunfo,Curiosidade
+Herrerassauro,A1,1.5,m,300,Kg,4.5,m,231,mi. de anos,false,Seu nome significa “lagarto de Herrera”
+Pterodáctilo,A2,0.5,m,300,Kg,1.0,m,231,mi. de anos,false,Se alimentava de peixes e outros animais pequenos
+Plateossauro,A3,2.0,m,4000,Kg,9.0,m,221,mi. de anos,false,Habitava a região da Europa
+Ultrassauro,A4,22.0,m,90000,Kg,38.0,m,154,mi. de anos,false,Dinossauro herbívoro e quadrúpede que vivia na Ásia
+Coelophisis,A5,1.8,m,30,Kg,3.0,m,227,mi. de anos,false,Seu nome vem do latim "forma oca"
+Othnielia,A6,1.1,m,40,Kg,1.5,m,146,mi. de anos,false,Possuia dentes arredondados e esmaltados
+Eoraptor,A7,0.8,m,10,Kg,1.0,m,231,mi. de anos,false,Um dos mais antigos dinossauros conhecidos
+Oftalmossauro,A8,1.3,m,3000,Kg,5.0,m,165,mi. de anos,false,Tinha forma de golfinho com dentes pequenos e robustos
+Procompsognato,B1,0.3,m,1.0,Kg,1.2,m,222,mi. de anos,false,Eram animais carniceiros como os chacais
+Velociraptor,B2,1.0,m,15,Kg,1.8,m,80,mi. de anos,false,Um dinossauro que vivia e caçava em bandos
+Peteinossauro,B3,0.3,m,0.2,Kg,0.6,m,210,mi. de anos,false,Este animal não é um dinossauro e sim um réptil voador
+Tiranossauro Rex,B4,5.6,m,7000,Kg,14.0,m,68,mi. de anos,true,Possui um nome bem sugestivo que significa "Rei dos lagartos tiranos"
+Melanorossauro,B5,12.0,m,8000,Kg,15.0,m,228,mi. de anos,false,Um dinossauro herbívoro e quadrúpede
+Carcharodontossauro,B6,5.8,m,8000,Kg,14.0,m,113,mi. de anos,false,Seu nome vem do latim "lagarto com dentes de tubarão"
+Nothossauro,B7,8.0,m,400,Kg,9.0,m,220,mi. de anos,false,Um dos maiores predadores aquáticos da sua época
+Psitacossauro,B8,0.7,m,25,Kg,2.0,m,125,mi. de anos,false,Seu nome significa "lagarto papagaio" pois possuia um bico fino e afiado
+Patagossauro,C1,8.0,m,16000,Kg,18.0,m,169,mi. de anos,false,Vivia em florestas tropicais da patagônia
+Triceratopo,C2,6.0,m,6000,Kg,9.0,m,68,mi. de anos,false,Bastante conhecido por seus três chifres que lhe dão nome
+Estegossauro,C3,4.0,m,2000,Kg,9.0,m,156,mi. de anos,false,Possuia placas largas e verticais cuja função até hoje se discute
+Carnotauro,C4,3.0,m,1000,Kg,7.5,m,113,mi. de anos,false,Por sua formação óssea era um animal adaptado para corridas
+Brachiossauro,C5,15.0,m,50000,Kg,28.0,m,156,mi. de anos,false,Possuia um pescoço muito grande com uma cabeça pequena
+Barionix,C6,8.0,m,2000,Kg,12.0,m,125,mi. de anos,false,Possuia garras de cerca de 30cm em cada mão
+Diplodoco,C7,5.0,m,20000,Kg,27.0,m,156,mi. de anos,false,Possuia uma cauda de quase 15 metros
+Oviraptor,C8,1.3,m,35,Kg,2.5,m,80,mi. de anos,false,Dinossauro pequeno cujo nome significa "ladrão de ovos"
+Ceratossauro,D1,2.0,m,1000,Kg,6.0,m,156,mi. de anos,false,Em latim seu nome significa "lagarto do chifre nasal"
+Baptornis,D2,0.8,m,7,Kg,1.0,m,83,mi. de anos,false,Era uma ave mas estava mais adaptada ao meio aquático
+Alossauro,D3,5.2,m,3600,Kg,14.0,m,156,mi. de anos,false,Estava no topo da cadeia alimentar de sua época
+Iberomesornis,D4,0.2,m,0.03,Kg,0.1,m,125,mi. de anos,false,Ave primitica que viveu na região da Espanha
+Dilofossauro,D5,2.5,m,450,Kg,7.0,m,206,mi. de anos,false,Este animal habitava a região da América do Norte
+Hylaeossauro,D6,1.8,m,1500,Kg,5.0,m,130,mi. de anos,false,Possuia uma carapaça de espinhos que servia de defesa
+Compsognato,D7,0.7,m,2,Kg,1.0,m,156,mi. de anos,false,Já foram encontrados dois esqueletos bem preservados desta espécie
+Globidens,D8,1.1,m,400,Kg,6.0,m,150,mi. de anos,false,Um dinossauro aquático com poderosos dentes semi-esféricos

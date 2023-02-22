@@ -1,0 +1,33 @@
+Nome,Codigo,Comprimento,UnidadeDeMedida,Peso,UnidadeDeMedida,Magia,UnidadeDeMedida,Ameaça,UnidadeDeMedida,Trunfo,Curiosidade
+Acromântula,A1,400,m,50,Kg,10,,40,,false,Espécie de aranha que pode possuir consciência
+Basilisco,A2,6,m,70,Kg,50,,80,,false,Olhar um basilisco diretamente nos olhos matará imediatamente a vítima
+Bicho-Papão,A3,0.6,m,40,Kg,55,,5,,false,É um não-ser que assume a forma do pior medo da pessoa que ele ver
+Centauro,A4,2.5,m,480,Kg,20,,50,,false,Possuem a metade superior do corpo humano e a parte inferior equina
+Dementador,A5,3,m,70,Kg,60,,65,,false,"Criatura das trevas que conseguem sugar a alma de criaturas através de seu ""beijo"""
+Dragão,A6,30,m,5000,Kg,40,,70,,false,Criatura grande e imponente que cospe fogo
+Duende,A7,1.4,m,40,Kg,15,,2,,false,Conhecidos por sua notável habilidade com metais
+Elfo-doméstico,A8,1.2,m,30,Kg,25,,4,,false,Seres de pequena estatura que servem geralmente a antigas famílias de bruxos
+Fantasma,B1,1.8,m,0,Kg,20,,0,,false,Espírito das pessoas que faleceram e tiveram medo da morte
+Fênix,B2,1,m,8,Kg,70,,40,,false,Quando morre pode renascer das cinzas como um pequeno filhote
+Hipogrifo,B3,2.6,m,450,Kg,10,,25,,false,Animal orgulhoso que confia em quem o trata com respeito
+Lobisomem,B4,2.2,m,75,Kg,10,,45,,false,Um humano se torna um lobisomem após sofrer de infecção por licantropia
+Pelúcio,B5,0.3,m,5,Kg,5,,2,,false,Uma criatura fofa com uma grande atração por tudo o que é bhilhante
+Seminviso,B6,0.4,m,4,Kg,20,,0,,false,Um animal mágico que pode ficar invisível e dizer o futuro
+Sereiano,B7,2.1,m,85,Kg,35,,45,,false,"Assim como os centauros foi-lhes oferecido o status de ""ser"" mas eles recusaram por não querer estar sob o mesmo status que os vampiros"
+Tronquilhos,B8,0.1,m,0.1,Kg,0,,0,,false,É muito difícil de se encontrar por se camuflar com os galhos das árvores
+Testrálio,C1,2.7,m,400,Kg,25,,35,,false,Apenas aqueles que já presenciaram a morte conseguem enxergá-los
+Pássaro-Trovão,C2,3.2,m,900,Kg,70,,55,,false,Esta besta tem a capacidade de alterar o clima enquanto voa
+Occami,C3,4.5,m,800,Kg,30,,35,,false,Seus ovos são feitos da mais pura prata
+Erumpente,C4,5.5,m,3000,Kg,20,,40,,false,Possuem uma bolsa de lava em seus chifres que usam quando se sentem ameaçados
+Serpente-marinha,C5,30,m,10000,Kg,15,,70,,false,Enorme besta marinha com cabeça de cavalo e corpo de cobra
+Nundu,C6,2.3,m,220,Kg,30,,100,,true,É considerada a criatura mais perigosa já existente
+Arpéu,C7,10.5,m,8000,Kg,15,,60,,false,Possui uma pele mais grossa que a dos dragões e consegue resistir à maioria dos feitiços
+Manticora,C8,2,m,210,Kg,35,,85,,false,Tem o costume sombrio de cantarolar baixinho para suas vítimas
+Bezerro Apaixonado,D1,1,m,30,Kg,2,,5,,false,Esta pequena e fofa criatura tem o costume de dançar em formações circulares
+Agoureiro,D2,40,m,6,Kg,5,,3,,false,As penas desse pássaro não podem ser usadas como caneta pois repelem a tinta
+Cavalo do lago,D3,12,m,1000,Kg,40,,45,,false,É um monstro marinho metamorfo cujo maior da espécie é o monstro do lago Ness
+Kappa,D4,0.4,m,7,Kg,15,,70,,false,O Kappa é um demônio aquático japonês que se alimenta de sangue humano
+Salamandra,D5,0.6,m,11,Kg,50,,45,,false,São pequenos lagartos de fogo que se alimentam de chamas
+Pumaruna,D6,2.4,m,100,Kg,35,,50,,false,Tem o poder da hipnose e são ótimos em legitimência
+Metagot,D7,0.4,m,4,Kg,40,,20,,false,"Se parece com um felino mas quando atacado ele retorna pra sua forma normal conhecida como ""forma de Espírito"""
+Abarimon,D8,1.7,m,60,Kg,15,,30,,false,Tem os pés virados pra trás o que não o impede de correr rapidamente

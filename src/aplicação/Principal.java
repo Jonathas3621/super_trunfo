@@ -1,19 +1,20 @@
 package aplicação;
 
+import Exceções.NullThemeException;
 import entidades.Jogador;
 import entidades.JogadorMaquina;
-import entidades.Timer;
 import interfaces.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-public class Principal implements ActionListener{
+public class Principal implements ActionListener, PropertyChangeListener{
     private static Principal instancia = null;
     private static JFrame janelaAtual = null;
-    private static Jogo partidaAtual = null;
     
     private Principal(){}
     
@@ -25,7 +26,7 @@ public class Principal implements ActionListener{
     
     public static void main(String[] args) {
         JanelaInicial janelaInicial = new JanelaInicial();
-        janelaInicial.adicionarEventListener(getInstance());
+        janelaInicial.adicionarActionListener(getInstance());
         setJanelaAtual(janelaInicial);
     }
     
@@ -37,47 +38,71 @@ public class Principal implements ActionListener{
         Principal.janelaAtual = janela;
     }
     
-    public static Jogo getJogo(){
-        return Principal.partidaAtual;
-    }
-    
-    private static void setJogo(Jogo partida){
-        Principal.partidaAtual = partida;
-    }
-    
     @Override
     public void actionPerformed(ActionEvent e) {
+        JButton button = (JButton) e.getSource();
         
-        if(((JButton) e.getSource()).getText().equals("Jogar")) {
-            
-            String[] temas = {"Predadores", "Dinossauros", "Raças de D&D", "Criaturas Harry Potter"};
+        if(button.getText().equals("Jogar") || button.getText().equals("Jogar Novamente")){ 
+            String[] temas = {"Skyrim", "Dinossauros", "Raças de D&D", "Criaturas Harry Potter"};
             
             Object tema = JOptionPane.showInputDialog(getJanelaAtual(),
-                    "Escolha um item", "Opçao",
+                    "Escolha um Tema", "Tema",
                     JOptionPane.INFORMATION_MESSAGE, null,
                     temas, temas[0]); 
             
-            setJogo(new Jogo((String) tema));
+            Jogo partida = null;
+            
+            try{
+                partida = new Jogo((String) tema);
+            }catch(NullThemeException nte){
+                return;
+            }
             
             Jogador jogadorw = new Jogador("Jonathas");
             JogadorMaquina jogadorBot = new JogadorMaquina("Bot");
-            
-            getJogo().adicionarJogador(jogadorw);
-            getJogo().adicionarJogador(jogadorBot);
-            
+
+            partida.adicionarJogador(jogadorw);
+            partida.adicionarJogador(jogadorBot);
+
             getJanelaAtual().dispose();
-            
+
             JanelaDeJogo janelaDeJogo= new JanelaDeJogo();
-            setJanelaAtual(janelaDeJogo);
             janelaDeJogo.adicionarActionListener(jogadorw, true);
-            janelaDeJogo.adicionarActionListener(getJogo().getTimer(),false);
+            janelaDeJogo.adicionarActionListener(partida.getTimer(),false);
+            setJanelaAtual(janelaDeJogo);
+
+            partida.adicionarListener(janelaDeJogo);
+            partida.adicionarListener(getInstance());
             
-            getJogo().adicionarListener(janelaDeJogo);
-            
-            System.out.println(janelaDeJogo);
-            
-            Thread thread = new Thread(getJogo());
+            Thread thread = new Thread(partida);
             thread.start();
         }
+        if(button.getText().equals("Ir para o menu") ||
+                button.getText().equals("Voltar")){
+            getJanelaAtual().dispose();
+            JanelaInicial janelaInicial = new JanelaInicial();
+            janelaInicial.adicionarActionListener(getInstance());
+            setJanelaAtual(janelaInicial);
+        }
+        if(button.getText().equals("Sair")){
+            getJanelaAtual().dispose();
+            System.exit(0);
+        }
+        if(button.getText().equals("Ver regras")){
+            getJanelaAtual().dispose();
+            JanelaDeRegras janelaDeRegras = new JanelaDeRegras();
+            janelaDeRegras.adicionarActionListener(getInstance());
+            setJanelaAtual(janelaDeRegras);
+        }
+    }
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        if(evt.getPropertyName().equals("fimDeJogo")){
+            getJanelaAtual().dispose();
+            JanelaDeFimDeJogo fimDeJogo = new JanelaDeFimDeJogo((boolean) evt.getNewValue());
+            fimDeJogo.adicionarActionListener(getInstance());
+            setJanelaAtual(fimDeJogo);
+        }  
     }
 }
