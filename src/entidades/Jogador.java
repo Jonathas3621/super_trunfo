@@ -18,7 +18,7 @@ public class Jogador extends JogadorAbstrato implements ActionListener{
         
         while (getAtributoEscolhido() == 0) {
             try {
-                wait(3);
+                wait();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt(); 
                 System.err.println("Thread Interrupted");
@@ -45,7 +45,7 @@ public class Jogador extends JogadorAbstrato implements ActionListener{
                     ((JButton) e.getSource()).getText().charAt(3)));
 
             setAtributoEscolhido(att);
-            notifyAll();
+            notify();
         }
     }
 }

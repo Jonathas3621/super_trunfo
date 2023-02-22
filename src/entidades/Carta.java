@@ -74,15 +74,15 @@ public class Carta {
 	}
         
         public String[] extrairDadosComoString(){
-            String[] listaDeDados = new String[6];
+            String[] listaDeDados = new String[7];
 
             listaDeDados[0] = String.format("%s | %s", this.getCodigo(), this.getNome());
-            listaDeDados[5] = "CURIOSO, NÃO?";
-            for(int i=1; i<=4; i++){
-                listaDeDados[i] = this.getAtributos()[i-1].toString();
-                //System.out.println("Teste Extrair Dados" + listaDeDados[i]);
+            listaDeDados[6] = "CURIOSO, NÃO?";
+            listaDeDados[1] = ehTrunfo() ? "Super Trunfo": "";
+            for(int i=2; i<=5; i++){
+                listaDeDados[i] = this.getAtributos()[i-2].toString();
             }
-            //for(String o: listaDeDados) System.out.print(o + " ");
+            
             return listaDeDados;
         }
 	

@@ -21,7 +21,7 @@
             "destreza":"13",
             "constituição":"12",
             "inteligência":"17",
-            "trunfo":false
+            "trunfo":"false"
         },
         "3A":{
             "nome":"Humano",
@@ -29,7 +29,7 @@
             "destreza":"13",
             "constituição":"13",
             "inteligência":"16",
-            "trunfo":false
+            "trunfo":"false"
         },
         "4A":{
             "nome":"Draconato",
@@ -37,7 +37,7 @@
             "destreza":"12",
             "constituição":"16",
             "inteligência":"11",
-            "trunfo":false
+            "trunfo":"false"
         },
         "5A":{
             "nome":"Gnomo",
@@ -45,7 +45,7 @@
             "destreza":"8",
             "constituição":"8",
             "inteligência":"15",
-            "trunfo":false
+            "trunfo":"false"
         },
         "6A":{
             "nome":"Meio-Elfo",
@@ -53,7 +53,7 @@
             "destreza":"13",
             "constituição":"14",
             "inteligência":"16",
-            "trunfo":false
+            "trunfo":"false"
         },
         "7A":{
             "nome":"Meio-Orc",
@@ -61,7 +61,7 @@
             "destreza":"6",
             "constituição":"17",
             "inteligência":"13",
-            "trunfo":false
+            "trunfo":"false"
         },
         "8A":{
             "nome":"Tiefling",
@@ -69,7 +69,7 @@
             "destreza":"15",
             "constituição":"14",
             "inteligência":"14",
-            "trunfo":false
+            "trunfo":"false"
         },
 
         "1B":{
@@ -78,7 +78,7 @@
             "destreza":"12",
             "constituição":"16",
             "inteligência":"15",
-            "trunfo":false
+            "trunfo":"false"
         },
         "2B":{
             "nome":"Pseudodragão",
@@ -86,7 +86,7 @@
             "destreza":"15",
             "constituição":"13",
             "inteligência":"10",
-            "trunfo":false
+            "trunfo":"false"
         },
         "3B":{
             "nome":"Sprite",
@@ -94,7 +94,7 @@
             "destreza":"18",
             "constituição":"10",
             "inteligência":"14",
-            "trunfo":false
+            "trunfo":"false"
         },
         "4B":{
             "nome":"Zumbi",
@@ -102,7 +102,7 @@
             "destreza":"6",
             "constituição":"16",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
         "5B":{
             "nome":"Tubarão dos Arrecifes",
@@ -110,7 +110,7 @@
             "destreza":"13",
             "constituição":"13",
             "inteligência":"1",
-            "trunfo":false
+            "trunfo":"false"
         },
         "6B":{
             "nome":"Serpente venenosa",
@@ -118,7 +118,7 @@
             "destreza":"16",
             "constituição":"11",
             "inteligência":"1",
-            "trunfo":false
+            "trunfo":"false"
         },
         "7B":{
             "nome":"Tigre",
@@ -126,7 +126,7 @@
             "destreza":"15",
             "constituição":"14",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
         "8B":{
             "nome":"Pantera",
@@ -134,7 +134,7 @@
             "destreza":"15",
             "constituição":"10",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
 
         "1C":{
@@ -143,7 +143,7 @@
             "destreza":"15",
             "constituição":"8",
             "inteligência":"2",
-            "trunfo":false
+            "trunfo":"false"
         },
         "2C":{
             "nome":"Leão",
@@ -151,7 +151,7 @@
             "destreza":"15",
             "constituição":"13",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
         "3C":{
             "nome":"Javali",
@@ -159,7 +159,7 @@
             "destreza":"11",
             "constituição":"12",
             "inteligência":"2",
-            "trunfo":false
+            "trunfo":"false"
         },
         "4C":{
             "nome":"Crocodilo",
@@ -167,7 +167,7 @@
             "destreza":"10",
             "constituição":"13",
             "inteligência":"2",
-            "trunfo":false
+            "trunfo":"false"
         },
         "5C":{
             "nome":"Cobra constritora",
@@ -175,7 +175,7 @@
             "destreza":"14",
             "constituição":"12",
             "inteligência":"1",
-            "trunfo":false
+            "trunfo":"false"
         },
         "6C":{
             "nome":"Aranha gigante",
@@ -183,7 +183,7 @@
             "destreza":"16",
             "constituição":"12",
             "inteligência":"2",
-            "trunfo":false
+            "trunfo":"false"
         },
         "7C":{
             "nome":"Águia gigante",
@@ -191,7 +191,7 @@
             "destreza":"17",
             "constituição":"13",
             "inteligência":"8",
-            "trunfo":false
+            "trunfo":"false"
         },
         "8C":{
             "nome":"Quasit",
@@ -199,7 +199,7 @@
             "destreza":"17",
             "constituição":"10",
             "inteligência":"7",
-            "trunfo":false
+            "trunfo":"false"
         },
 
         "1D":{
@@ -208,7 +208,7 @@
             "destreza":"10",
             "constituição":"11",
             "inteligência":"4",
-            "trunfo":false
+            "trunfo":"false"
         },
         "2D":{
             "nome":"Orcs",
@@ -216,7 +216,7 @@
             "destreza":"9",
             "constituição":"18",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
         "3D":{
             "nome":"Corvo",
@@ -224,7 +224,7 @@
             "destreza":"15",
             "constituição":"8",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         },
         "4D":{
             "nome":"Urso marrom",
@@ -232,7 +232,7 @@
             "destreza":"10",
             "constituição":"16",
             "inteligência":"2",
-            "trunfo":false
+            "trunfo":"false"
         },
         "5D":{
             "nome":"Diabrete",
@@ -240,7 +240,7 @@
             "destreza":"17",
             "constituição":"13",
             "inteligência":"11",
-            "trunfo":false
+            "trunfo":"false"
         },
         "6D":{
             "nome":"Esqueleto",
@@ -248,7 +248,7 @@
             "destreza":"14",
             "constituição":"15",
             "inteligência":"6",
-            "trunfo":false
+            "trunfo":"false"
         },
         "7D":{
             "nome":"Lobo Atroz",
@@ -256,7 +256,7 @@
             "destreza":"15",
             "constituição":"15",
             "inteligência":"3",
-            "trunfo":true
+            "trunfo":"true"
         },
         "8D":{
             "nome":"Mastim",
@@ -264,7 +264,7 @@
             "destreza":"14",
             "constituição":"12",
             "inteligência":"3",
-            "trunfo":false
+            "trunfo":"false"
         }
     },
 
@@ -278,262 +278,262 @@
         },
         "1A":{
             "nome":"Guepardo",
-            "altura":80,
-            "peso":45,
-            "comprimento":150,
-            "velocidade":104,
-            "trunfo":false
+            "altura":"80",
+            "peso":"45",
+            "comprimento":"150",
+            "velocidade":"104",
+            "trunfo":"false"
         },
         "2A":{
             "nome":"Onça",
-            "altura":100,
-            "peso":96,
-            "comprimento":180,
-            "velocidade":80,
-            "trunfo":false
+            "altura":"100",
+            "peso":"96",
+            "comprimento":"180",
+            "velocidade":"80",
+            "trunfo":"false"
         },
         "3A":{
             "nome":"Jacaré Açu",
-            "altura":30,
-            "peso":300,
-            "comprimento":600,
-            "velocidade":48,
-            "trunfo":false
+            "altura":"30",
+            "peso":"300",
+            "comprimento":"600",
+            "velocidade":"48",
+            "trunfo":"false"
         },
         "4A":{
             "nome":"Leopardo",
-            "altura":75,
-            "peso":70,
-            "comprimento":160,
-            "velocidade":58,
-            "trunfo":false
+            "altura":"75",
+            "peso":"70",
+            "comprimento":"160",
+            "velocidade":"58",
+            "trunfo":"false"
         },
         "5A":{
             "nome":"Tigre",
-            "altura":110,
-            "peso":280,
-            "comprimento":280,
-            "velocidade":46,
-            "trunfo":false
+            "altura":"110",
+            "peso":"280",
+            "comprimento":"280",
+            "velocidade":"46",
+            "trunfo":"false"
         },
         "6A":{
             "nome":"Pantera",
-            "altura":100,
-            "peso":900,
-            "comprimento":150,
-            "velocidade":75,
-            "trunfo":false
+            "altura":"100",
+            "peso":"900",
+            "comprimento":"150",
+            "velocidade":"75",
+            "trunfo":"false"
         },
         "7A":{
             "nome":"Hiena",
-            "altura":120,
-            "peso":55,
-            "comprimento":100,
-            "velocidade":24,
-            "trunfo":false
+            "altura":"120",
+            "peso":"55",
+            "comprimento":"100",
+            "velocidade":"24",
+            "trunfo":"false"
         },
         "8A":{
             "nome":"Lobo cinzento",
-            "altura":105,
-            "peso":65,
-            "comprimento":150,
-            "velocidade":40,
-            "trunfo":false
+            "altura":"105",
+            "peso":"65",
+            "comprimento":"150",
+            "velocidade":"40",
+            "trunfo":"false"
         },
 
         "1B":{
             "nome":"Falcão peregrino",
-            "altura":58,
-            "peso":1,
-            "comprimento":60,
-            "velocidade":390,
-            "trunfo":false
+            "altura":"58",
+            "peso":"1",
+            "comprimento":"60",
+            "velocidade":"390",
+            "trunfo":"false"
         },
         "2B":{
             "nome":"Águia real",
-            "altura":90,
-            "peso":6,
-            "comprimento":100,
-            "velocidade":320,
-            "trunfo":false
+            "altura":"90",
+            "peso":"6",
+            "comprimento":"100",
+            "velocidade":"320",
+            "trunfo":"false"
         },
         "3B":{
             "nome":"Lince",
-            "altura":75,
-            "peso":25,
-            "comprimento":100,
-            "velocidade":40,
-            "trunfo":false
+            "altura":"75",
+            "peso":"25",
+            "comprimento":"100",
+            "velocidade":"40",
+            "trunfo":"false"
         },
         "4B":{
             "nome":"Tarântula",
-            "altura":2,
-            "peso":0.2,
-            "comprimento":6,
-            "velocidade":0.4,
-            "trunfo":false
+            "altura":"2",
+            "peso":"0.2",
+            "comprimento":"6",
+            "velocidade":"0.4",
+            "trunfo":"false"
         },
         "5B":{
             "nome":"Cascavél",
-            "altura":3,
-            "peso":2,
-            "comprimento":170,
-            "velocidade":10,
-            "trunfo":false
+            "altura":"3",
+            "peso":"2",
+            "comprimento":"170",
+            "velocidade":"10",
+            "trunfo":"false"
         },
         "6B":{
             "nome":"Naja",
-            "altura":5,
-            "peso":5.8,
-            "comprimento":550,
-            "velocidade":13,
-            "trunfo":false
+            "altura":"5",
+            "peso":"5.8",
+            "comprimento":"550",
+            "velocidade":"13",
+            "trunfo":"false"
         },
         "7B":{
             "nome":"Coruja",
-            "altura":46,
-            "peso":0.6,
-            "comprimento":105,
-            "velocidade":128,
-            "trunfo":false
+            "altura":"46",
+            "peso":"0.6",
+            "comprimento":"105",
+            "velocidade":"128",
+            "trunfo":"false"
         },
         "8B":{
             "nome":"Hárpia",
-            "altura":60,
-            "peso":1,
-            "comprimento":105,
-            "velocidade":130,
-            "trunfo":false
+            "altura":"60",
+            "peso":"1",
+            "comprimento":"105",
+            "velocidade":"130",
+            "trunfo":"false"
         },
 
         "1C":{
             "nome":"Tubarão Tigre",
-            "altura":110,
-            "peso":1750,
-            "comprimento":600,
-            "velocidade":32,
-            "trunfo":false
+            "altura":"110",
+            "peso":"1750",
+            "comprimento":"600",
+            "velocidade":"32",
+            "trunfo":"false"
         },
         "2C":{
             "nome":"Orca",
-            "altura":250,
-            "peso":3500,
-            "comprimento":7,
-            "velocidade":56,
-            "trunfo":false
+            "altura":"250",
+            "peso":"3500",
+            "comprimento":"7",
+            "velocidade":"56",
+            "trunfo":"false"
         },
         "3C":{
             "nome":"Piranha",
-            "altura":10,
-            "peso":0.4,
-            "comprimento":24,
-            "velocidade":32,
-            "trunfo":false
+            "altura":"10",
+            "peso":"0.4",
+            "comprimento":"24",
+            "velocidade":"32",
+            "trunfo":"false"
         },
         "4C":{
             "nome":"Raposa",
-            "altura":45,
-            "peso":15,
-            "comprimento":80,
-            "velocidade":38,
-            "trunfo":false
+            "altura":"45",
+            "peso":"15",
+            "comprimento":"80",
+            "velocidade":"38",
+            "trunfo":"false"
         },
         "5C":{
             "nome":"Humano",
-            "altura":170,
-            "peso":75,
-            "comprimento":20,
-            "velocidade":40,
-            "trunfo":false
+            "altura":"170",
+            "peso":"75",
+            "comprimento":"0.3",
+            "velocidade":"40",
+            "trunfo":"false"
         },
         "6C":{
             "nome":"Viúva negra",
-            "altura":1,
-            "peso":0.01,
-            "comprimento":3,
-            "velocidade":0.4,
-            "trunfo":false
+            "altura":"1",
+            "peso":"0.01",
+            "comprimento":"3",
+            "velocidade":"0.4",
+            "trunfo":"false"
         },
         "7C":{
             "nome":"Louva-deus",
-            "altura":3,
-            "peso":0.008,
-            "comprimento":12,
-            "velocidade":0.35,
-            "trunfo":false
+            "altura":"3",
+            "peso":"",
+            "comprimento":"12",
+            "velocidade":"0.35",
+            "trunfo":"false"
         },
         "8C":{
             "nome":"Escorpião",
-            "altura":1.5,
-            "peso":0.02,
-            "comprimento":12,
-            "velocidade":1.5,
-            "trunfo":false
+            "altura":"1.5",
+            "peso":"0.02",
+            "comprimento":"12",
+            "velocidade":"1.5",
+            "trunfo":"false"
         },
 
         "1D":{
             "nome":"Lontra",
-            "altura":22,
-            "peso":14,
-            "comprimento":60,
-            "velocidade":12,
-            "trunfo":false
+            "altura":"22",
+            "peso":"14",
+            "comprimento":"60",
+            "velocidade":"12",
+            "trunfo":"false"
         },
         "2D":{
             "nome":"Crocodilo",
-            "altura":35,
-            "peso":1200,
-            "comprimento":700,
-            "velocidade":25,
-            "trunfo":false
+            "altura":"35",
+            "peso":"1200",
+            "comprimento":"700",
+            "velocidade":"25",
+            "trunfo":"false"
         },
         "3D":{
             "nome":"Leão",
-            "altura":110,
-            "peso":225,
-            "comprimento":190,
-            "velocidade":56,
-            "trunfo":false
+            "altura":"110",
+            "peso":"225",
+            "comprimento":"190",
+            "velocidade":"56",
+            "trunfo":"true"
         },
         "4D":{
             "nome":"Sucuri",
-            "altura":12,
-            "peso":200,
-            "comprimento":800,
-            "velocidade":11,
-            "trunfo":false
+            "altura":"12",
+            "peso":"200",
+            "comprimento":"800",
+            "velocidade":"11",
+            "trunfo":"false"
         },
         "5D":{
             "nome":"Urso cinzento",
-            "altura":140,
-            "peso":500,
-            "comprimento":270,
-            "velocidade":35,
-            "trunfo":false
+            "altura":"140",
+            "peso":"500",
+            "comprimento":"270",
+            "velocidade":"35",
+            "trunfo":"false"
         },
         "6D":{
             "nome":"Urso polar",
-            "altura":150,
-            "peso":800,
-            "comprimento":260,
-            "velocidade":24,
-            "trunfo":false
+            "altura":"150",
+            "peso":"800",
+            "comprimento":"260",
+            "velocidade":"24",
+            "trunfo":"false"
         },
         "7D":{
             "nome":"Dragão de Komodo",
-            "altura":110,
-            "peso":500,
-            "comprimento":160,
-            "velocidade":4,
-            "trunfo":false
+            "altura":"110",
+            "peso":"500",
+            "comprimento":"160",
+            "velocidade":"4",
+            "trunfo":"false"
         },
         "8D":{
             "nome":"Lobo guará",
-            "altura":100,
-            "peso":25,
-            "comprimento":130,
-            "velocidade":72,
-            "trunfo":false
+            "altura":"100",
+            "peso":"25",
+            "comprimento":"130",
+            "velocidade":"72",
+            "trunfo":"false"
         }
     },
 

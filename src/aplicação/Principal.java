@@ -2,6 +2,7 @@ package aplicação;
 
 import entidades.Jogador;
 import entidades.JogadorMaquina;
+import entidades.Timer;
 import interfaces.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -68,7 +69,8 @@ public class Principal implements ActionListener{
             
             JanelaDeJogo janelaDeJogo= new JanelaDeJogo();
             setJanelaAtual(janelaDeJogo);
-            janelaDeJogo.adicionarEventListener(jogadorw);
+            janelaDeJogo.adicionarActionListener(jogadorw, true);
+            janelaDeJogo.adicionarActionListener(getJogo().getTimer(),false);
             
             getJogo().adicionarListener(janelaDeJogo);
             

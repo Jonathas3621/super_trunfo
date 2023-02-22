@@ -5,12 +5,15 @@ import java.util.ArrayList;
 import entidades.Baralho;
 import entidades.Carta;
 import entidades.JogadorAbstrato;
+import entidades.Timer;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
-import static java.lang.Thread.sleep;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.swing.JButton;
 
 public class Jogo implements Runnable{
 	
@@ -18,12 +21,13 @@ public class Jogo implements Runnable{
     private JogadorAbstrato jogadorDaVez;
     private ArrayList<JogadorAbstrato> jogadores;
     private PropertyChangeSupport anunciante;
+    private Timer timer;
 
     public Jogo(String tema){
-
         this.baralho = new Baralho(tema);
         jogadores = new ArrayList<>();
         anunciante = new PropertyChangeSupport(this);
+        timer = new Timer();
     }
 
     public synchronized void partidaDeSuperTrunfo() {
@@ -59,6 +63,8 @@ public class Jogo implements Runnable{
                             getJogadorDaVez().getMonte().verDoTopo());
                 
                 int atributoEscolhido = jogadorDaVez.jogarTurno();
+                
+                
                 System.out.println(atributoEscolhido);
                 System.out.println(getJogadorDaVez().getMonte().verDoTopo().getAtributos()[atributoEscolhido].getNome());
                 
@@ -93,12 +99,7 @@ public class Jogo implements Runnable{
                 
                 removerPerdedores();
                 
-                try {
-                    sleep(2000);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt(); 
-                    System.err.println("Thread Interrupted");
-                }
+                timer.waitEvent();
                 
                 System.out.println("Status:");
                 mostrarStatus();
@@ -174,6 +175,11 @@ public class Jogo implements Runnable{
 
     private ArrayList<JogadorAbstrato> getJogadores(){
         return jogadores;
+    }
+    
+    //Getters e setters
+    public Timer getTimer(){
+        return this.timer;
     }
     
     //Método de Multithreading
