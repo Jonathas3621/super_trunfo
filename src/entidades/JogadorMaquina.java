@@ -1,25 +1,26 @@
 package entidades;
 
-import static java.lang.Thread.sleep;
 import java.util.Random;
 
 public class JogadorMaquina extends JogadorAbstrato{
 
+        private Timer timer;
+        
 	public JogadorMaquina(String nome) {
-		super(nome);
+            super(nome);
+            this.timer = new Timer();
 	}
 
 	@Override
 	public synchronized int jogarTurno() {
             
-            try {
-                sleep(2000);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); 
-                System.err.println("Thread Interrupted");
-            }
+            getTimer().sleepALittle(2000);
             
             Random random = new Random();
             return random.nextInt(3);
 	}
+        
+        private Timer getTimer(){
+            return timer;
+        }
 }

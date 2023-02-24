@@ -1,33 +1,33 @@
 Nome,Codigo,Força,UnidadeDeMedida,Destreza,UnidadeDeMedida,Constituição,UnidadeDeMedida,Inteligência,UnidadeDeMedida,Trunfo,Curiosidade
-Elfo,A1,12," ",14," ",15," ",18," ",false,Preferem a diplomacia mas não hesitam perante a necessidade de empregar a violência
-Halfling,A2,9," ",13," ",12," ",17," ",false,São de baixa estatura mas nunca subestime suas capacidades
-Humano,A3,10," ",13," ",13," ",16," ",false,A espécie mais comum no universo de Dungeons&Dragons
-Draconato,A4,15," ",12," ",16," ",11," ",false,Mesmo não tendo calda ou asas são descendentes dos orgulhosos dragões
-Gnomo,A5,7," ",8," ",8," ",15," ",false,A energia e entusiasmo dos gnomos pela vida brilha em cada pedacinho do seu pequeno corpo
-Meio-Elfo,A6,11," ",13," ",14," ",16," ",false,"Vagam entre dois mundos mas não pertencem a nenhum "
-Meio-Orc,A7,19," ",6," ",17," ",13," ",false,Meio-orcs não são mals por natureza
-Tiefling,A8,15," ",15," ",14," ",14," ",false,A atual aparência dos Tieflings se deve a um pacto feito com Asmodeus - senhor dos nove infernos - gerações atrás
-Anão,B1,14," ",12," ",16," ",15," ",false,Anões são conhecidos como hábeis guerreiros mas também como incríveis trabalhadores em pedra e metal.
-Pseudodragão,B2,6," ",15," ",13," ",10," ",false,O pseudodragão pode se comunicar telepaticamente com algumas limitações
-Sprite,B3,3," ",18," ",10," ",14," ",false,Podem descobrir o estado emocional de alguma criatura através do toque.
-Zumbi,B4,13," ",6," ",16," ",3," ",false,"Compreende os idiomas que conhecia em vida mas não pode falar "
-Tubarão dos Arrecifes,B5,14," ",13," ",13," ",1,,false,Tem grande vantagem em ataques envolvendo táticas de matilha
-Serpente venenosa,B6,2," ",16," ",11," ",1," ",false,Besta miúda com um incômodo ataque corpo-a-corpo
-Tigre,B7,17," ",15," ",14," ",3," ",false,Além da furtividade o tigre tem grande percepção devido ao seu olfato aguçado.
-Pantera,B8,14," ",15," ",10," ",3," ",false,Uma besta de tamanho médio que usa dentes e garras para atacar seu alvo
-Morcego,C1,2," ",15," ",8," ",2," ",false,Usa sua audição aguçada para aumentar sua percepção e para se localizar no espaço.
-Leão,C2,17," ",15," ",13," ",3," ",false,Besta grande e perigosa que usa seu olfato aguçado e táticas de matilha para tomar vantagem de seus alvos
-Javali,C3,13," ",11," ",12," ",2," ",false,Animal feroz e com grande vontade de sobreviver
-Crocodilo,C4,15," ",10," ",13," ",2," ",false,Consegue prender sua respiração por até quinze minutos
-Cobra constritora,C5,15," ",14," ",12," ",1," ",false,Com um nome bem descritivo a cobra constritora consegue constringir apenas um alvo por vez
-Aranha gigante,C6,14," ",16," ",12," ",2," ",false,Quando em contato com uma teia ela sabe a posição exata de outra criatura que também esteja em contato com a teia
-Águia gigante,C7,16," ",17," ",13," ",8," ",false,Besta voadora grande que usa garras e bicos para atacar seus oponentes
-Quasit,C8,5," ",17," ",10," ",7," ",false,"Metamorfo mal por natureza que pode se transformar em bestas pequenas como o morcego "
-Goblins,D1,7," ",10," ",11," ",4," ",false,Raça bastante odiada e que anda em bandos
-Orcs,D2,20," ",9," ",18," ",3," ",false,Carregam orgulhosamente suas cicatrizes de batalha
-Corvo,D3,2," ",15,,8,,3," ",false,O corvo é capaz de imitar sons simples que ele ouve como um bebê chorando ou pessoas cochichando
+Elfo,A1,12,,14,,15,,18,,false,Preferem a diplomacia mas não hesitam perante a necessidade de empregar a violência
+Halfling,A2,9,,13,,12,,17,,false,São de baixa estatura mas nunca subestime suas capacidades
+Humano,A3,10,,13,,13,,16,,false,A espécie mais comum no universo de Dungeons&Dragons
+Draconato,A4,15,,12,,16,,11,,false,Mesmo não tendo calda ou asas são descendentes dos orgulhosos dragões
+Gnomo,A5,7,,8,,8,,15,,false,A energia e entusiasmo dos gnomos pela vida brilha em cada pedacinho do seu pequeno corpo
+Meio-Elfo,A6,11,,13,,14,,16,,false,"Vagam entre dois mundos mas não pertencem a nenhum "
+Meio-Orc,A7,19,,6,,17,,13,,false,Meio-orcs não são mals por natureza
+Tiefling,A8,15,,15,,14,,14,,false,A atual aparência dos Tieflings se deve a um pacto feito com Asmodeus - senhor dos nove infernos - gerações atrás
+Anão,B1,14,,12,,16,,15,,false,Anões são conhecidos como hábeis guerreiros mas também como incríveis trabalhadores em pedra e metal.
+Pseudodragão,B2,6,,15,,13,,10,,false,O pseudodragão pode se comunicar telepaticamente com algumas limitações
+Sprite,B3,3,,18,,10,,14,,false,Podem descobrir o estado emocional de alguma criatura através do toque.
+Zumbi,B4,13,,6,,16,,3,,false,"Compreende os idiomas que conhecia em vida mas não pode falar "
+Tubarão dos Arrecifes,B5,14,,13,,13,,1,,false,Tem grande vantagem em ataques envolvendo táticas de matilha
+Serpente venenosa,B6,2,,16,,11,,1,,false,Besta miúda com um incômodo ataque corpo-a-corpo
+Tigre,B7,17,,15,,14,,3,,false,Além da furtividade o tigre tem grande percepção devido ao seu olfato aguçado.
+Pantera,B8,14,,15,,10,,3,,false,Uma besta de tamanho médio que usa dentes e garras para atacar seu alvo
+Morcego,C1,2,,15,,8,,2,,false,Usa sua audição aguçada para aumentar sua percepção e para se localizar no espaço.
+Leão,C2,17,,15,,13,,3,,false,Besta grande e perigosa que usa seu olfato aguçado e táticas de matilha para tomar vantagem de seus alvos
+Javali,C3,13,,11,,12,,2,,false,Animal feroz e com grande vontade de sobreviver
+Crocodilo,C4,15,,10,,13,,2,,false,Consegue prender sua respiração por até quinze minutos
+Cobra constritora,C5,15,,14,,12,,1,,false,Com um nome bem descritivo a cobra constritora consegue constringir apenas um alvo por vez
+Aranha gigante,C6,14,,16,,12,,2,,false,Quando em contato com uma teia ela sabe a posição exata de outra criatura que também esteja em contato com a teia
+Águia gigante,C7,16,,17,,13,,8,,false,Besta voadora grande que usa garras e bicos para atacar seus oponentes
+Quasit,C8,5,,17,,10,,7,,false,"Metamorfo mal por natureza que pode se transformar em bestas pequenas como o morcego "
+Goblins,D1,7,,10,,11,,4,,false,Raça bastante odiada e que anda em bandos
+Orcs,D2,20,,9,,18,,3,,false,Carregam orgulhosamente suas cicatrizes de batalha
+Corvo,D3,2,,15,,8,,3,,false,O corvo é capaz de imitar sons simples que ele ouve como um bebê chorando ou pessoas cochichando
 Urso marrom,D4,19,,10,,16,,2,,false,Besta grande com uma poderosa armadura natural
-Diabrete,D5,6," ",17," ",13," ",11," ",false,Metamorfo com resistência natural a magia
-Esqueleto,D6,10," ",14," ",15," ",6," ",false,Morto vivo que usa uma espada a curto alcance e um arco a distância
-Lobo Atroz,D7,17," ",15," ",15," ",3," ",true,Besta grande com faro e audição aguçados
-Mastim,D8,13," ",14," ",12," ",3," ",false,Halflings e outros pequenos humanoides os usam como montaria
+Diabrete,D5,6,,17,,13,,11,,false,Metamorfo com resistência natural a magia
+Esqueleto,D6,10,,14,,15,,6,,false,Morto vivo que usa uma espada a curto alcance e um arco a distância
+Lobo Atroz,D7,17,,15,,15,,3,,true,Besta grande com faro e audição aguçados
+Mastim,D8,13,,14,,12,,3,,false,Halflings e outros pequenos humanoides os usam como montaria

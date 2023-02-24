@@ -1,6 +1,8 @@
 package aplicação;
 
+import jogo.Jogo;
 import Exceções.NullThemeException;
+import Exceções.UserWithoutNameException;
 import entidades.Jogador;
 import entidades.JogadorMaquina;
 import interfaces.*;
@@ -8,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -15,6 +18,7 @@ import javax.swing.JOptionPane;
 public class Principal implements ActionListener, PropertyChangeListener{
     private static Principal instancia = null;
     private static JFrame janelaAtual = null;
+    private static String nomeDeUsuario = "";
     
     private Principal(){}
     
@@ -30,6 +34,7 @@ public class Principal implements ActionListener, PropertyChangeListener{
         setJanelaAtual(janelaInicial);
     }
     
+    //Getters e setters
     public JFrame getJanelaAtual(){
         return Principal.janelaAtual;
     }
@@ -38,27 +43,49 @@ public class Principal implements ActionListener, PropertyChangeListener{
         Principal.janelaAtual = janela;
     }
     
+    public static String getNomeDeUsuario(){
+        return Principal.nomeDeUsuario;
+    }
+    
+    public static void setNomeDeUsuario(String nomeDeUsuario){
+        Principal.nomeDeUsuario = nomeDeUsuario;
+    }
+    
+    //Métodos do padrão observer
     @Override
     public void actionPerformed(ActionEvent e) {
-        JButton button = (JButton) e.getSource();
         
+        JButton button = (JButton) e.getSource();
+
         if(button.getText().equals("Jogar") || button.getText().equals("Jogar Novamente")){ 
-            String[] temas = {"Skyrim", "Dinossauros", "Raças de D&D", "Criaturas Harry Potter"};
             
+            try{
+                if(getNomeDeUsuario().isEmpty() && getJanelaAtual() instanceof JanelaInicial){
+                    throw new UserWithoutNameException();
+                }
+            }catch(UserWithoutNameException uwne){
+                PropertyChangeSupport pcs = new PropertyChangeSupport(getInstance());
+                pcs.addPropertyChangeListener((JanelaInicial) getJanelaAtual());
+                pcs.firePropertyChange("UserWithoutName", null, null);
+                return;
+            }
+            
+            String[] temas = {"Skyrim", "Dinossauros", "Raças de D&D", "Criaturas Harry Potter"};
+
             Object tema = JOptionPane.showInputDialog(getJanelaAtual(),
                     "Escolha um Tema", "Tema",
                     JOptionPane.INFORMATION_MESSAGE, null,
                     temas, temas[0]); 
-            
+
             Jogo partida = null;
-            
+
             try{
                 partida = new Jogo((String) tema);
             }catch(NullThemeException nte){
                 return;
             }
-            
-            Jogador jogadorw = new Jogador("Jonathas");
+
+            Jogador jogadorw = new Jogador(getNomeDeUsuario());
             JogadorMaquina jogadorBot = new JogadorMaquina("Bot");
 
             partida.adicionarJogador(jogadorw);
@@ -73,7 +100,7 @@ public class Principal implements ActionListener, PropertyChangeListener{
 
             partida.adicionarListener(janelaDeJogo);
             partida.adicionarListener(getInstance());
-            
+
             Thread thread = new Thread(partida);
             thread.start();
         }

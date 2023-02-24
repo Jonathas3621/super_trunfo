@@ -85,8 +85,8 @@ public class Baralho extends LinkedList<Carta>{
 	}
 
 	public void distribuir(List<JogadorAbstrato> jogadores) {
-            //while(!this.isEmpty()) {
-            for(int i = 0; i < 2; i++){
+            while(!this.isEmpty()) {
+            //for(int i = 0; i < 2; i++){ //Para testes
                 for(JogadorAbstrato jogador: jogadores) {
                     jogador.getMonte().adicionarCarta(pegarDoTopo());
                 }

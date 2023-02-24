@@ -1,9 +1,6 @@
 package entidades;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-
-public abstract class JogadorAbstrato implements PropertyChangeListener{
+public abstract class JogadorAbstrato{
 	
 	private String nome;
 	private Baralho monte;
@@ -14,15 +11,6 @@ public abstract class JogadorAbstrato implements PropertyChangeListener{
 	}
 	
 	public abstract int jogarTurno();
-	
-    /**
-     *
-     * @param event
-     */
-    @Override
-	public void propertyChange(PropertyChangeEvent event) {
-		if(event.getNewValue().equals(this)) jogarTurno();
-	}
 	
 	public String getNome() {
 		return nome;

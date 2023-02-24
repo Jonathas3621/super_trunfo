@@ -1,4 +1,4 @@
-package aplicação;
+package jogo;
 
 import Exceções.NullThemeException;
 import java.util.ArrayList;
@@ -37,19 +37,17 @@ public class Jogo implements Runnable{
         
         while(!temVencedor()) {
                 
+                ArrayList<Carta> cartasEmJogo = new ArrayList<>();
+                
                 anunciante.firePropertyChange("inicioDePartida", 
                             null, 
                             null);
-                
-                ArrayList<Carta> cartasEmJogo = new ArrayList<>();
 
                 setJogadorDaVez(getJogadores().get(indexJogadorDaVez));
                 
                 anunciante.firePropertyChange("mensagemJogadorDaVez", 
                             null, 
                             getJogadorDaVez().getNome());
-
-                System.out.printf("Vez de %s%n%n", getJogadorDaVez().getNome());
                 
                 anunciante.firePropertyChange("status", 
                             null, 
@@ -63,10 +61,6 @@ public class Jogo implements Runnable{
                 });
                 
                 int atributoEscolhido = jogadorDaVez.jogarTurno();
-                
-                
-                System.out.println(atributoEscolhido);
-                System.out.println(getJogadorDaVez().getMonte().verDoTopo().getAtributos()[atributoEscolhido].getNome());
                 
                 getJogadores().forEach(jogador -> {
                     if(jogador instanceof entidades.JogadorMaquina)
@@ -83,15 +77,10 @@ public class Jogo implements Runnable{
                     cartasEmJogo.add(jogador.getMonte().pegarDoTopo());
                 });
                 
-                System.out.printf("Cartas em jogo %s%n%n", cartasEmJogo);
-                System.out.printf("Jogadores: %s", jogadores);
-                
                 indexJogadorDaVez = cartaVencedora(cartasEmJogo, atributoEscolhido);
                 
                 for(Carta carta: cartasEmJogo)
                         getJogadores().get(indexJogadorDaVez).getMonte().adicionarCarta(carta);
-                
-                System.out.printf("Jogador %s venceu!%n", getJogadores().get(indexJogadorDaVez).getNome());
                 
                 anunciante.firePropertyChange("mensagemVencedor", 
                             null, 
@@ -99,12 +88,9 @@ public class Jogo implements Runnable{
                 
                 removerPerdedores();
                 
-                timer.waitEvent();
-                
-                System.out.println("Status:");
-                mostrarStatus();
-                System.out.printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=%n%n");
+                timer.waitAMoment();
         }
+        
         boolean vencedor = getJogadores().get(0) instanceof entidades.Jogador;
         anunciante.firePropertyChange("fimDeJogo",null,vencedor);
     }
@@ -163,6 +149,7 @@ public class Jogo implements Runnable{
             if(jogad.get(indice).getMonte().isEmpty()) jogadores.remove(jogad.get(indice));
     }
 
+    //Getters e setters
     public JogadorAbstrato getJogadorDaVez(){
         return jogadorDaVez;
     }
@@ -175,7 +162,6 @@ public class Jogo implements Runnable{
         return jogadores;
     }
     
-    //Getters e setters
     public Timer getTimer(){
         return this.timer;
     }
