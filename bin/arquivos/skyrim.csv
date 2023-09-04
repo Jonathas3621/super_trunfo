@@ -1,0 +1,33 @@
+Nome,Codigo,Vida,Hp,Stamina,St,Magia,Mp,Nível,Lv,Trunfo,Curiosidade
+Dragonborn,A1,910,Hp,875,St,850,Mp,79,Lv,true,O Guerreiro da profecia que tem como destino derrotar Alduin O Devorador de Mundos
+Miraak,A2,750,Hp,880,St,940,Mp,76,Lv,false,Antigo Dragoborn servo de Hermaeus Mora
+Ebony Warrior,A3,820,Hp,900,St,710,Mp,81,Lv,false,Guerreiro que já conquistou tudo que queira na vida
+Paarthurnax,A4,920,Hp,800,St,800,Mp,75,Lv,false,Um dragão líder dos Anciões que está em busca de redenção por seus atos passados
+Alduin,A5,950,Hp,790,St,840,Mp,90,Lv,false,Capaz de  invocar uma tempestade com chuva de bolas de fogo
+Mago Supremo,A6,500,Hp,550,St,1000,Mp,80,Lv,false,Autoridade maxima no Colegio de Magia em Winterhold
+Ancião,A7,780,Hp,850,St,900,Mp,74,Lv,false,Um dos cinco sabios que sabe a lingua dos dragões
+Lorde Vampiro,A8,880,Hp,885,St,910,Mp,76,Lv,false,Seu desejo é apagar o Sol na terra de Skyrim
+Gigante,B1,700,Hp,670,St,100,Mp,50,Lv,false,São pacifistas até que você decida incomoda-los
+Troll de gelo,B2,460,Hp,510,St,120,Mp,30,Lv,false,Magias de gelo são de baixa efetividade contra ele
+Falmer,B3,230,Hp,380,St,400,Mp,28,Lv,false,Dizem que eles são os desaparecidos elfos de gelo
+Chaurus Caçador,B4,340,Hp,410,St,122,Mp,46,Lv,false,Ao se aproximar dos ovos eles podem surgir para atacar
+Delphine,B5,410,Hp,450,St,300,Mp,60,Lv,false,Participantes dos blades os caçadores de dragões
+Cicero,B6,240,Hp,460,St,290,Mp,58,Lv,false,Membro da Dark Brotherhood a guilda de assasinos
+Lobisomem,B7,680,Hp,700,St,210,Mp,57,Lv,false,Para você se tornar um basta apenas beber o sangue de um lobisomem
+Vampiro,B8,200,Hp,300,St,500,Mp,39,Lv,false,Para se tornar um vampiro você tem que ser mordido por um vampiro ou  adiquirir "vampirismo"
+Cultista,C1,255,Hp,333,St,550,Mp,40,Lv,false,Um soldado que cultua Miraak
+Draugr,C2,199,Hp,320,St,490,Mp,19,Lv,false,Morto-vivo que vive no subterrâneo de Skyrim
+Mamute,C3,669,Hp,420,St,90,Mp,28,Lv,false,São domesticados pelos gigantes
+Shadowmere,C4,888,Hp,666,St,333,Mp,55,Lv,false,Cavalo de cor preta e olhos vermelhos dos assasinos da Dark Brotherhood
+Espectro de gelo,C5,150,Hp,160,St,390,Mp,12,Lv,false,Encontrado em regiões muito geladas
+Elfo Supremo,C6,178,Hp,211,St,540,Mp,17,Lv,false,Seres da que possuem um adicional de magia
+Elfo Negro,C7,177,Hp,212,St,510,Mp,18,Lv,false,Possuem melhores habilidades furtivas
+Argoniano,C8,170,Hp,298,St,254,Mp,29,Lv,false,Um Argoniano pode respirar de baixo da água
+Lobo,D1,30,Hp,40,St,1,Mp,5,Lv,false,Andam sempre em bando
+Tigre,D2,265,Hp,233,St,12,Mp,23,Lv,false,Dropa dentes de tigre e pele de tigre
+Ork,D3,210,Hp,244,St,55,Mp,24,Lv,false,"Eles vivem em comunidade em locais separados das cidades "
+Khajits,D4,181,Hp,240,St,123,Mp,26,Lv,false,"Possuem visão noturna "
+Chaurus,D5,245,Hp,197,St,143,Mp,31,Lv,false,Inseto que vive com os Falmer podendo evoluir para Chaurus Caçador
+Ladrão,D6,310,Hp,400,St,412,Mp,41,Lv,false,Vivem para roubar
+Renegado,D7,401,Hp,405,St,431,Mp,42,Lv,false,Vivem em comunidade perto de Morthal
+Caçador de Vampiro,D8,399,Hp,415,St,387,Mp,43,Lv,false,Guerreiro especializado em matar vampiros

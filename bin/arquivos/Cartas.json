@@ -1,124 +1,826 @@
 {
     "Raças de D&D":
     {
-        "1A":{"nome":"Goblins"},
-        "2A":{"nome":"Orcs"},
-        "3A":{"nome":"Corvo"},
-        "4A":{"nome":"Urso marrom"},
-        "5A":{"nome":"Diabrete"},
-        "6A":{"nome":"Esqueleto"},
-        "7A":{"nome":"Lobo Atroz"},
-        "8A":{"nome":"Mastim"},
+        "atributos":{
+            "força":"",
+            "destreza":"",
+            "constituição":"",
+            "inteligência":""
+        },
+        "1A":{
+            "nome":"Elfo",
+            "força":"12",
+            "destreza":"14",
+            "constituição":"15",
+            "inteligência":"18",
+            "trunfo":false
+        },
+        "2A":{
+            "nome":"Halfling",
+            "força":"9",
+            "destreza":"13",
+            "constituição":"12",
+            "inteligência":"17",
+            "trunfo":"false"
+        },
+        "3A":{
+            "nome":"Humano",
+            "força":"10",
+            "destreza":"13",
+            "constituição":"13",
+            "inteligência":"16",
+            "trunfo":"false"
+        },
+        "4A":{
+            "nome":"Draconato",
+            "força":"15",
+            "destreza":"12",
+            "constituição":"16",
+            "inteligência":"11",
+            "trunfo":"false"
+        },
+        "5A":{
+            "nome":"Gnomo",
+            "força":"7",
+            "destreza":"8",
+            "constituição":"8",
+            "inteligência":"15",
+            "trunfo":"false"
+        },
+        "6A":{
+            "nome":"Meio-Elfo",
+            "força":"11",
+            "destreza":"13",
+            "constituição":"14",
+            "inteligência":"16",
+            "trunfo":"false"
+        },
+        "7A":{
+            "nome":"Meio-Orc",
+            "força":"19",
+            "destreza":"6",
+            "constituição":"17",
+            "inteligência":"13",
+            "trunfo":"false"
+        },
+        "8A":{
+            "nome":"Tiefling",
+            "força":"15",
+            "destreza":"15",
+            "constituição":"14",
+            "inteligência":"14",
+            "trunfo":"false"
+        },
 
-        "1B":{"nome":"Quasit"},
-        "2B":{"nome":"Pseudodragão"},
-        "3B":{"nome":"Sprite"},
-        "4B":{"nome":"Zumbi"},
-        "5B":{"nome":"Tubarão dos Arrecifes"},
-        "6B":{"nome":"Serpente venenosa"},
-        "7B":{"nome":"Tigre"},
-        "8B":{"nome":"Pantera"},
+        "1B":{
+            "nome":"Anão",
+            "força":"14",
+            "destreza":"12",
+            "constituição":"16",
+            "inteligência":"15",
+            "trunfo":"false"
+        },
+        "2B":{
+            "nome":"Pseudodragão",
+            "força":"6",
+            "destreza":"15",
+            "constituição":"13",
+            "inteligência":"10",
+            "trunfo":"false"
+        },
+        "3B":{
+            "nome":"Sprite",
+            "força":"3",
+            "destreza":"18",
+            "constituição":"10",
+            "inteligência":"14",
+            "trunfo":"false"
+        },
+        "4B":{
+            "nome":"Zumbi",
+            "força":"13",
+            "destreza":"6",
+            "constituição":"16",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
+        "5B":{
+            "nome":"Tubarão dos Arrecifes",
+            "força":"14",
+            "destreza":"13",
+            "constituição":"13",
+            "inteligência":"1",
+            "trunfo":"false"
+        },
+        "6B":{
+            "nome":"Serpente venenosa",
+            "força":"2",
+            "destreza":"16",
+            "constituição":"11",
+            "inteligência":"1",
+            "trunfo":"false"
+        },
+        "7B":{
+            "nome":"Tigre",
+            "força":"17",
+            "destreza":"15",
+            "constituição":"14",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
+        "8B":{
+            "nome":"Pantera",
+            "força":"14",
+            "destreza":"15",
+            "constituição":"10",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
 
-        "1C":{"nome":"Morcego"},
-        "2C":{"nome":"Leão"},
-        "3C":{"nome":"Javali"},
-        "4C":{"nome":"Crocodilo"},
-        "5C":{"nome":"Cobre constritora"},
-        "6C":{"nome":"Aranha gigante"},
-        "7C":{"nome":"Águia gigante"},
-        "8C":{"nome":"Anão"},
+        "1C":{
+            "nome":"Morcego",
+            "força":"2",
+            "destreza":"15",
+            "constituição":"8",
+            "inteligência":"2",
+            "trunfo":"false"
+        },
+        "2C":{
+            "nome":"Leão",
+            "força":"17",
+            "destreza":"15",
+            "constituição":"13",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
+        "3C":{
+            "nome":"Javali",
+            "força":"13",
+            "destreza":"11",
+            "constituição":"12",
+            "inteligência":"2",
+            "trunfo":"false"
+        },
+        "4C":{
+            "nome":"Crocodilo",
+            "força":"15",
+            "destreza":"10",
+            "constituição":"13",
+            "inteligência":"2",
+            "trunfo":"false"
+        },
+        "5C":{
+            "nome":"Cobra constritora",
+            "força":"15",
+            "destreza":"14",
+            "constituição":"12",
+            "inteligência":"1",
+            "trunfo":"false"
+        },
+        "6C":{
+            "nome":"Aranha gigante",
+            "força":"14",
+            "destreza":"16",
+            "constituição":"12",
+            "inteligência":"2",
+            "trunfo":"false"
+        },
+        "7C":{
+            "nome":"Águia gigante",
+            "força":"16",
+            "destreza":"17",
+            "constituição":"13",
+            "inteligência":"8",
+            "trunfo":"false"
+        },
+        "8C":{
+            "nome":"Quasit",
+            "força":"5",
+            "destreza":"17",
+            "constituição":"10",
+            "inteligência":"7",
+            "trunfo":"false"
+        },
 
-        "1D":{"nome":"Elfo"},
-        "2D":{"nome":"Halfling"},
-        "3D":{"nome":"Humano"},
-        "4D":{"nome":"Draconato"},
-        "5D":{"nome":"Gnomo"},
-        "6D":{"nome":"Meio-Elfo"},
-        "7D":{"nome":"Meio-Orc"},
-        "8D":{"nome":"Tiefling"}
+        "1D":{
+            "nome":"Goblins",
+            "força":"7",
+            "destreza":"10",
+            "constituição":"11",
+            "inteligência":"4",
+            "trunfo":"false"
+        },
+        "2D":{
+            "nome":"Orcs",
+            "força":"20",
+            "destreza":"9",
+            "constituição":"18",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
+        "3D":{
+            "nome":"Corvo",
+            "força":"2",
+            "destreza":"15",
+            "constituição":"8",
+            "inteligência":"3",
+            "trunfo":"false"
+        },
+        "4D":{
+            "nome":"Urso marrom",
+            "força":"19",
+            "destreza":"10",
+            "constituição":"16",
+            "inteligência":"2",
+            "trunfo":"false"
+        },
+        "5D":{
+            "nome":"Diabrete",
+            "força":"6",
+            "destreza":"17",
+            "constituição":"13",
+            "inteligência":"11",
+            "trunfo":"false"
+        },
+        "6D":{
+            "nome":"Esqueleto",
+            "força":"10",
+            "destreza":"14",
+            "constituição":"15",
+            "inteligência":"6",
+            "trunfo":"false"
+        },
+        "7D":{
+            "nome":"Lobo Atroz",
+            "força":"17",
+            "destreza":"15",
+            "constituição":"15",
+            "inteligência":"3",
+            "trunfo":"true"
+        },
+        "8D":{
+            "nome":"Mastim",
+            "força":"13",
+            "destreza":"14",
+            "constituição":"12",
+            "inteligência":"3",
+            "trunfo":"false"
+        }
     },
 
     "Predadores":
     {
-        "1A":{"nome":"Guepardo"},
-        "2A":{"nome":"Onça"},
-        "3A":{"nome":"Leão"},
-        "4A":{"nome":"Leopardo"},
-        "5A":{"nome":"Tigre"},
-        "6A":{"nome":"Pantera"},
-        "7A":{"nome":"Hiena"},
-        "8A":{"nome":"Lobo cinzento"},
+        "atributos":{
+            "altura":"cm",
+            "peso":"Kg",
+            "comprimento":"cm",
+            "velocidade":"Km/h"
+        },
+        "1A":{
+            "nome":"Guepardo",
+            "altura":"80",
+            "peso":"45",
+            "comprimento":"150",
+            "velocidade":"104",
+            "trunfo":"false"
+        },
+        "2A":{
+            "nome":"Onça",
+            "altura":"100",
+            "peso":"96",
+            "comprimento":"180",
+            "velocidade":"80",
+            "trunfo":"false"
+        },
+        "3A":{
+            "nome":"Jacaré Açu",
+            "altura":"30",
+            "peso":"300",
+            "comprimento":"600",
+            "velocidade":"48",
+            "trunfo":"false"
+        },
+        "4A":{
+            "nome":"Leopardo",
+            "altura":"75",
+            "peso":"70",
+            "comprimento":"160",
+            "velocidade":"58",
+            "trunfo":"false"
+        },
+        "5A":{
+            "nome":"Tigre",
+            "altura":"110",
+            "peso":"280",
+            "comprimento":"280",
+            "velocidade":"46",
+            "trunfo":"false"
+        },
+        "6A":{
+            "nome":"Pantera",
+            "altura":"100",
+            "peso":"900",
+            "comprimento":"150",
+            "velocidade":"75",
+            "trunfo":"false"
+        },
+        "7A":{
+            "nome":"Hiena",
+            "altura":"120",
+            "peso":"55",
+            "comprimento":"100",
+            "velocidade":"24",
+            "trunfo":"false"
+        },
+        "8A":{
+            "nome":"Lobo cinzento",
+            "altura":"105",
+            "peso":"65",
+            "comprimento":"150",
+            "velocidade":"40",
+            "trunfo":"false"
+        },
 
-        "1B":{"nome":"Falcão"},
-        "2B":{"nome":"Águia"},
-        "3B":{"nome":"Lince"},
-        "4B":{"nome":"Tarântula"},
-        "5B":{"nome":"Cascavél"},
-        "6B":{"nome":"Naja"},
-        "7B":{"nome":"Coruja"},
-        "8B":{"nome":"Hárpia"},
+        "1B":{
+            "nome":"Falcão peregrino",
+            "altura":"58",
+            "peso":"1",
+            "comprimento":"60",
+            "velocidade":"390",
+            "trunfo":"false"
+        },
+        "2B":{
+            "nome":"Águia real",
+            "altura":"90",
+            "peso":"6",
+            "comprimento":"100",
+            "velocidade":"320",
+            "trunfo":"false"
+        },
+        "3B":{
+            "nome":"Lince",
+            "altura":"75",
+            "peso":"25",
+            "comprimento":"100",
+            "velocidade":"40",
+            "trunfo":"false"
+        },
+        "4B":{
+            "nome":"Tarântula",
+            "altura":"2",
+            "peso":"0.2",
+            "comprimento":"6",
+            "velocidade":"0.4",
+            "trunfo":"false"
+        },
+        "5B":{
+            "nome":"Cascavél",
+            "altura":"3",
+            "peso":"2",
+            "comprimento":"170",
+            "velocidade":"10",
+            "trunfo":"false"
+        },
+        "6B":{
+            "nome":"Naja",
+            "altura":"5",
+            "peso":"5.8",
+            "comprimento":"550",
+            "velocidade":"13",
+            "trunfo":"false"
+        },
+        "7B":{
+            "nome":"Coruja",
+            "altura":"46",
+            "peso":"0.6",
+            "comprimento":"105",
+            "velocidade":"128",
+            "trunfo":"false"
+        },
+        "8B":{
+            "nome":"Hárpia",
+            "altura":"60",
+            "peso":"1",
+            "comprimento":"105",
+            "velocidade":"130",
+            "trunfo":"false"
+        },
 
-        "1C":{"nome":"Tubarão Tigre"},
-        "2C":{"nome":"Orca"},
-        "3C":{"nome":"Piranha"},
-        "4C":{"nome":"Raposa"},
-        "5C":{"nome":"Humano"},
-        "6C":{"nome":"Viúva negra"},
-        "7C":{"nome":"Louva-deus"},
-        "8C":{"nome":"Escorpião"},
+        "1C":{
+            "nome":"Tubarão Tigre",
+            "altura":"110",
+            "peso":"1750",
+            "comprimento":"600",
+            "velocidade":"32",
+            "trunfo":"false"
+        },
+        "2C":{
+            "nome":"Orca",
+            "altura":"250",
+            "peso":"3500",
+            "comprimento":"7",
+            "velocidade":"56",
+            "trunfo":"false"
+        },
+        "3C":{
+            "nome":"Piranha",
+            "altura":"10",
+            "peso":"0.4",
+            "comprimento":"24",
+            "velocidade":"32",
+            "trunfo":"false"
+        },
+        "4C":{
+            "nome":"Raposa",
+            "altura":"45",
+            "peso":"15",
+            "comprimento":"80",
+            "velocidade":"38",
+            "trunfo":"false"
+        },
+        "5C":{
+            "nome":"Humano",
+            "altura":"170",
+            "peso":"75",
+            "comprimento":"0.3",
+            "velocidade":"40",
+            "trunfo":"false"
+        },
+        "6C":{
+            "nome":"Viúva negra",
+            "altura":"1",
+            "peso":"0.01",
+            "comprimento":"3",
+            "velocidade":"0.4",
+            "trunfo":"false"
+        },
+        "7C":{
+            "nome":"Louva-deus",
+            "altura":"3",
+            "peso":"",
+            "comprimento":"12",
+            "velocidade":"0.35",
+            "trunfo":"false"
+        },
+        "8C":{
+            "nome":"Escorpião",
+            "altura":"1.5",
+            "peso":"0.02",
+            "comprimento":"12",
+            "velocidade":"1.5",
+            "trunfo":"false"
+        },
 
-        "1D":{"nome":"Lontra"},
-        "2D":{"nome":"Crocodilo"},
-        "3D":{"nome":"Jacaré"},
-        "4D":{"nome":"Sucuri"},
-        "5D":{"nome":"Urso cinzento"},
-        "6D":{"nome":"Urso polar"},
-        "7D":{"nome":"Dragão de Komodo"},
-        "8D":{"nome":"Lobo guará"}
+        "1D":{
+            "nome":"Lontra",
+            "altura":"22",
+            "peso":"14",
+            "comprimento":"60",
+            "velocidade":"12",
+            "trunfo":"false"
+        },
+        "2D":{
+            "nome":"Crocodilo",
+            "altura":"35",
+            "peso":"1200",
+            "comprimento":"700",
+            "velocidade":"25",
+            "trunfo":"false"
+        },
+        "3D":{
+            "nome":"Leão",
+            "altura":"110",
+            "peso":"225",
+            "comprimento":"190",
+            "velocidade":"56",
+            "trunfo":"true"
+        },
+        "4D":{
+            "nome":"Sucuri",
+            "altura":"12",
+            "peso":"200",
+            "comprimento":"800",
+            "velocidade":"11",
+            "trunfo":"false"
+        },
+        "5D":{
+            "nome":"Urso cinzento",
+            "altura":"140",
+            "peso":"500",
+            "comprimento":"270",
+            "velocidade":"35",
+            "trunfo":"false"
+        },
+        "6D":{
+            "nome":"Urso polar",
+            "altura":"150",
+            "peso":"800",
+            "comprimento":"260",
+            "velocidade":"24",
+            "trunfo":"false"
+        },
+        "7D":{
+            "nome":"Dragão de Komodo",
+            "altura":"110",
+            "peso":"500",
+            "comprimento":"160",
+            "velocidade":"4",
+            "trunfo":"false"
+        },
+        "8D":{
+            "nome":"Lobo guará",
+            "altura":"100",
+            "peso":"25",
+            "comprimento":"130",
+            "velocidade":"72",
+            "trunfo":"false"
+        }
     },
 
     "Dinossauros":
     {
-        "1A":{"nome":"Herrerassauro"},
-        "2A":{"nome":"Procompsognato"},
-        "3A":{"nome":"Patagossauro"},
-        "4A":{"nome":"Ceratossauro"},
-        "5A":{"nome":"Pterodáctilo"},
-        "6A":{"nome":"Velociraptor"},
-        "7A":{"nome":"Triceratopo"},
-        "8A":{"nome":"Baptornis"},
+        "atributos":{
+            "altura":"m",
+            "comprimento":"m",
+            "peso":"Kg",
+            "viveu há":"milhões de anos"
+        },
+        "1A":{
+            "nome":"Herrerassauro",
+            "altura":"1.5",
+            "comprimento":"4.5",
+            "peso":"300",
+            "viveu há":"231",
+            "trunfo":"false"
+        },
+        "2A":{
+            "nome":"Pterodáctilo",
+            "altura":"0.5",
+            "comprimento":"1.0",
+            "peso":"300",
+            "viveu há":"231",
+            "trunfo":"false"
+        },
+        "3A":{
+            "nome":"Plateossauro",
+            "altura":"2.0",
+            "comprimento":"9.0",
+            "peso":"4000",
+            "viveu há":"221",
+            "trunfo":"false"
+        },
+        "4A":{
+            "nome":"Ultrassauro",
+            "altura":"22.0",
+            "comprimento":"38.0",
+            "peso":"90000",
+            "viveu há":"154",
+            "trunfo":"false"
+        },
+        "5A":{
+            "nome":"Coelophisis",
+            "altura":"1.8",
+            "comprimento":"3.0",
+            "peso":"30",
+            "viveu há":"227",
+            "trunfo":"false"
+        },
+        "6A":{
+            "nome":"Othnielia",
+            "altura":"1.1",
+            "comprimento":"1.5",
+            "peso":"40",
+            "viveu há":"146",
+            "trunfo":"false"
+        },
+        "7A":{
+            "nome":"Eoraptor",
+            "altura":"0.8",
+            "comprimento":"1.0",
+            "peso":"10",
+            "viveu há":"231",
+            "trunfo":"false"
+        },
+        "8A":{
+            "nome":"Oftalmossauro",
+            "altura":"1.3",
+            "comprimento":"5.0",
+            "peso":"3000",
+            "viveu há":"165",
+            "trunfo":"false"
+        },
 
-        "1B":{"nome":"Plateossauro"},
-        "2B":{"nome":"Peteinossauro"},
-        "3B":{"nome":"Estegossauro"},
-        "4B":{"nome":"Alossauro"},
-        "5B":{"nome":"Ultrassauro"},
-        "6B":{"nome":"Tiranossauro Rex"},
-        "7B":{"nome":"Carnotauro"},
-        "8B":{"nome":"Iberomesornis"},
+        "1B":{
+            "nome":"Procompsognato",
+            "altura":"0.3",
+            "comprimento":"1.2",
+            "peso":"1.0",
+            "viveu há":"222",
+            "trunfo":"false"
+        },
+        "2B":{
+            "nome":"Velociraptor",
+            "altura":"1.0",
+            "comprimento":"1.8",
+            "peso":"15",
+            "viveu há":"80",
+            "trunfo":"false"
+        },
+        "3B":{
+            "nome":"Peteinossauro",
+            "altura":"0.3",
+            "comprimento":"0.6",
+            "peso":"0.2",
+            "viveu há":"210",
+            "trunfo":"false"
+        },
+        "4B":{
+            "nome":"Tiranossauro Rex",
+            "altura":"5.6",
+            "comprimento":"14.0",
+            "peso":"7000",
+            "viveu há":"68",
+            "trunfo":"true"
+        },
+        "5B":{
+            "nome":"Melanorossauro",
+            "altura":"12.0",
+            "comprimento":"15.0",
+            "peso":"8000",
+            "viveu há":"228",
+            "trunfo":"false"
+        },
+        "6B":{
+            "nome":"Carcharodontossauro",
+            "altura":"5.8",
+            "comprimento":"14.0",
+            "peso":"8000",
+            "viveu há":"113",
+            "trunfo":"false"
+        },
+        "7B":{
+            "nome":"Nothossauro",
+            "altura":"8.0",
+            "comprimento":"9.0",
+            "peso":"400",
+            "viveu há":"220",
+            "trunfo":"false"
+        },
+        "8B":{
+            "nome":"Psitacossauro",
+            "altura":"0.7",
+            "comprimento":"2.0",
+            "peso":"25",
+            "viveu há":"125",
+            "trunfo":"false"
+        },
 
-        "1C":{"nome":"Coelophisis"},
-        "2C":{"nome":"Melanorossauro"},
-        "3C":{"nome":"Brachiossauro"},
-        "4C":{"nome":"Dilofosauro"},
-        "5C":{"nome":"Othnielia"},
-        "6C":{"nome":"Carcharodontossaruo"},
-        "7C":{"nome":"Barionix"},
-        "8C":{"nome":"Hylaeossauro"},
+        "1C":{
+            "nome":"Patagossauro",
+            "altura":"8.0",
+            "comprimento":"18.0",
+            "peso":"16000",
+            "viveu há":"169",
+            "trunfo":"false"
+        },
+        "2C":{
+            "nome":"Triceratopo",
+            "altura":"6.0",
+            "comprimento":"9.0",
+            "peso":"6000",
+            "viveu há":"68",
+            "trunfo":"false"
+        },
+        "3C":{
+            "nome":"Estegossauro",
+            "altura":"4.0",
+            "comprimento":"9.0",
+            "peso":"2000",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "4C":{
+            "nome":"Carnotauro",
+            "altura":"3.0",
+            "comprimento":"7.5",
+            "peso":"1000",
+            "viveu há":"113",
+            "trunfo":"false"
+        },
+        "5C":{
+            "nome":"Brachiossauro",
+            "altura":"15.0",
+            "comprimento":"28.0",
+            "peso":"50000",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "6C":{
+            "nome":"Barionix",
+            "altura":"8.0",
+            "comprimento":"12.0",
+            "peso":"2000",
+            "viveu há":"125",
+            "trunfo":"false"
+        },
+        "7C":{
+            "nome":"Diplodoco",
+            "altura":"5.0",
+            "comprimento":"27.0",
+            "peso":"20000",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "8C":{
+            "nome":"Oviraptor",
+            "altura":"1.3",
+            "comprimento":"2.5",
+            "peso":"35",
+            "viveu há":"80",
+            "trunfo":"false"
+        },
 
-        "1D":{"nome":"Eoraptor"},
-        "2D":{"nome":"Nothossauro"},
-        "3D":{"nome":"Diplodoco"},
-        "4D":{"nome":"Compsognato"},
-        "5D":{"nome":"Oftalmossauro"},
-        "6D":{"nome":"Psitacossauro"},
-        "7D":{"nome":"Oviraptor"},
-        "8D":{"nome":"Globidens"}
+        "1D":{
+            "nome":"Ceratossauro",
+            "altura":"2.0",
+            "comprimento":"6.0",
+            "peso":"1000",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "2D":{
+            "nome":"Baptornis",
+            "altura":"0.8",
+            "comprimento":"1.0",
+            "peso":"7",
+            "viveu há":"83",
+            "trunfo":"false"
+        },
+        "3D":{
+            "nome":"Alossauro",
+            "altura":"5.2",
+            "comprimento":"14.0",
+            "peso":"3600",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "4D":{
+            "nome":"Iberomesornis",
+            "altura":"0.2",
+            "comprimento":"0.1",
+            "peso":"0.03",
+            "viveu há":"125",
+            "trunfo":"false"
+        },
+        "5D":{
+            "nome":"Dilofossauro",
+            "altura":"2.5",
+            "comprimento":"7.0",
+            "peso":"450",
+            "viveu há":"206",
+            "trunfo":"false"
+        },
+        "6D":{
+            "nome":"Hylaeossauro",
+            "altura":"1.8",
+            "comprimento":"5.0",
+            "peso":"1500",
+            "viveu há":"130",
+            "trunfo":"false"
+        },
+        "7D":{
+            "nome":"Compsognato",
+            "altura":"0.7",
+            "comprimento":"1.0",
+            "peso":"2",
+            "viveu há":"156",
+            "trunfo":"false"
+        },
+        "8D":{
+            "nome":"Globidens",
+            "altura":"1.1",
+            "comprimento":"6.0",
+            "peso":"400",
+            "viveu há":"150",
+            "trunfo":"false"
+        }
     },
 
     "Criaturas Harry Potter":
-    {
-        "1A":{"nome":"Acromântula"},
+    {   "atributos":{
+            "comprimento":"cm",
+            "peso":"Kg",
+            "magia":"0-30",
+            "ameaça":""
+        },
+        "1A":{
+            "nome":"Acromântula",
+            "comprimento":"400",
+            "peso":"50",
+            "magia":"10",
+            "ameaça":"9",
+            "trunfo":"false"
+        },
         "2A":{"nome":"Basilisco"},
         "3A":{"nome":"Bicho-papão"},
         "4A":{"nome":"Centauro"},
